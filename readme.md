@@ -14,6 +14,6 @@
 `npm start` 
 open browser at `http://localhost:8080`
 
-## Produnction
+## Production release
 
-Pull-request to the main branch
+Pull-request / merge to the main branch for deploy
