@@ -1,0 +1,175 @@
+---json
+{
+    "layout": "layouts/main.webc",
+    "meta": {
+        "title": "Privacy notice",
+        "description": "Privacy notice"
+    }
+}
+---
+<container >
+  <div class="flex flex-col max-w-2xl mx-auto justify-center ">
+  
+    <img src="/images/5F8AB69C-FA08-4C25-B932-74D76EBB7721.jpg" alt="Me and my wife, Helen, lying on the grass in summer. " width="200" height="200" class="max-w-[100px] md:max-w-[200px] mx-auto aspect-square ring-2 ring-zinc-500/40 rotate-45 rounded-full bg-zinc-100 object-cover"/>
+    
+      
+      <h1 class="text-4xl font-bold tracking-tight text-zinc-800  sm:text-5xl mt-4">
+        Privacy Notice
+      </h1>
+      <div class="mt-6 text-sm text-zinc-600 privacy">
+            <p>I respect the privacy of every individual who visits my website, contacts me and works with me. I'm committed to safeguarding your privacy and have written this privacy notice to explain what information I collect, and what I do with it.</p>
+
+            <p>This policy may change so please check it periodically. It was last updated on 4th June 2019. </p>
+            
+            <h3 >Who is the data controller?</h3>
+
+            <p>For the purposes of the personal data described in this notice, the data controller is me, Martin Hicks. </p>
+            <p>My registration reference with the Information Commissioner’s Office (ICO) is ZA314159.</p>
+            <p>I operate in accordance with the Data Protection Act 1998 and EU 2016/679 (The GDPR).</p>
+            <p>If you commission me to work on your behalf, you would be the data controller and I would be a data processor for the personal data involved in your project or software.</p>
+            
+            <h3 >How do I obtain your personal data?</h3>
+            <p>I may obtain your personal data in a variety of ways, including:</p>
+            
+            <ul class="list-disc list-inside">
+                <li>From inbound enquiries via email</li>
+                <li>From inbound phone calls where I see the incoming phone number and you pass me information verbally</li>
+                <li>From your registration onto my software systems</li>
+                <li>From data you supply while working together during commissioned projects, or during new business activities and the act of commissioning new work</li>
+                <li>From networking activities and events, for example exchanging business cards or connecting on Linkedin.</li>
+                <li>From recommendations or references about you from others</li>
+                <li>From contact from and conversations with my suppliers</li>
+                <li>From website analytics</li>
+            </ul>
+
+            <p>Any information you give me should be accurate, and if supplying anyone else’s data you must ensure that you have the authority and legal basis to do so.</p>
+            
+            <h3 >What personal data is processed?</h3>
+
+            <p>Depending on your relationship and activity with me, I may process different types of information about you, including:</p>
+
+            <ul class="list-disc list-inside">
+                <li>Name</li>
+                <li>Email address</li>
+                <li>Phone number</li>
+                <li>Home address</li>
+                <li>Job title</li>
+                <li>Business name and address</li>
+                <li>IP addresses</li>
+                <li>Social media usernames/handles</li>
+                <li>Browser information</li>
+                <li>Bank account information</li>
+            </ul>
+
+            <h3 >How is your personal information used?</h3>
+            <p>The personal data you give me may be used in a variety of ways:</p>
+            
+            <ul class="list-disc list-inside">
+                <li>Communicating with you as a customer, about new or currently commissioned projects</li>
+                <li>Performing accounts tasks, such as raising and sending invoices</li>
+                <li>Storing in databases for reference by me and my suppliers</li>
+            </ul>
+
+            <h3 >Who is my information shared with?</h3>
+            <p>Your personal data will not be sold or disclosed to anyone outside of my business or my appointed suppliers, without obtaining your prior consent - unless I am required to do so by law.</p>
+
+            <h3 >Retention of your personal information</h3>
+            
+            <p>I will only keep your personal data for as long as it is relevant to the purpose for which it was collected or for as long as I am required to keep it by law.</p>
+            
+            <h3 >What is my legal basis for processing your data?</h3>
+            
+            <p>In most cases the processing is necessary for the performance of a contract between myself and you.</p>
+
+            <h3 >Your rights</h3>
+            
+            <p>You have the right to request access to the personal data that I hold about you - this is known as a Subject Access Request (SAR). If you wish to make an SAR about the personal data I hold about you, please email <a href="mailto:hello@martinhicks.net">hello@martinhicks.net</a>. I will respond within 30 days to provide you with the data I hold about you in a commonly-used electronic format. There is no charge for this service, however if requests become manifestly unfounded, excessive or repetitive, I may charge a fee appropriate to the administrative work required.</p>
+
+            <p>You have the right to request a rectification of your personal data. To do so, please email <a href="mailto:hello@martinhicks.net">hello@martinhicks.net</a>. I will respond within 30 days, although can be extended by two months if the request for rectification is complex. If I decide not take action in response to a request for rectification, I will explain to you my reasons.</p>
+            
+            <p>You have the right to the deletion or removal of your personal data where there is no compelling reason for its continued processing. To request deletion of your personal data, please email <a href="mailto:hello@martinhicks.net">hello@martinhicks.net</a>. I may refuse to comply with a request for erasure in some circumstances, for example in the case of requiring the information as part of a legal obligation, such as my statutory accounts and records.</p>
+            
+            <p>You have the right to suppress or restrict the processing of your personal data. To request this, please email <a href="mailto:hello@martinhicks.net">hello@martinhicks.net</a>.</p>
+            
+            <p>You have the right to data portability, which allows you to obtain and reuse your personal data for your own purposes across different services. To request this, please email <a href="mailto:hello@martinhicks.net">hello@martinhicks.net</a>. I will respond within 30 days to provide you with the data I hold about you in a commonly-used electronic format. This time can be extended by two months if the request is complex. </p>
+            
+            <p>You have the right to object to:</p>
+
+            <ul class="list-disc list-inside">
+                <li>direct marketing</li>
+                <li>processing based on legitimate interests</li>
+                <li>processing for purposes of scientific/historical research and statistics.</li>
+            </ul>
+            
+            <p>To make an objection to processing, please email <a href="mailto:hello@martinhicks.net">hello@martinhicks.net</a>.</p>
+
+            <h3 >How I protect your information</h3>
+            
+            <p>I take a range of organisational and technical measures to protect your information. I maintain strict physical, electronic and administrative safeguards to protect your personal data from unauthorised or inappropriate access.</p>
+            
+            <p>Where appropriate I use industry-standard encryption techniques, including encrypting web traffic using HTTPS.</p>
+            
+            <p>I hold regular security reviews to ensure that my systems and processes remain safe and secure for the protection of your personal data.</p>
+
+            <p>I keep software up to date with latest security patches as advised by the vendors of the software.</p>
+
+            <p>I use password management software to secure and encrypt credentials you give me, and to ensure my choice and use of passwords is secure.</p>
+            
+            <p>Where you have registered onto my software systems with a self-chosen password, I ask you not to use that same password on any other systems. You are responsible for the security of your own passwords.</p>
+            
+            <h3 >Is any of my data sent outside of the EU?</h3>
+            
+            <p>Yes, possibly - I use suppliers such as Google and Amazon Web Services who are based in the US, but have data centres in the UK and EU. Wherever possible I select data centres in the EU, however it’s likely some data is stored in the US.</p>
+            
+            <h3 >People under the age of 16</h3>
+            
+            <p>If you are under 16, please ensure that you obtain your parent/guardian's consent, and evidence of that consent, before you provide personal information to me.</p>
+            
+            <h3 >How this website uses cookies</h3>
+            
+            <p>A cookie is a small amount of data, which often includes a unique identifier that is sent to your computer or mobile phone browser from a website's server and is stored on your device. Each website can send its own cookie to your browser if your browser's preferences allow it, but (to protect your privacy) your browser only permits a website to access the cookies it has already sent to you, not the cookies sent to you by other websites. Many websites do this whenever a user visits their website in order to track online traffic flows.</p>
+            
+            <p>As a visitor, you are able to edit your browser settings to accept all cookies, to notify you when a cookie is issued, or not to receive cookies at any time. The last of these means that the website might not work properly. Each browser is different, so check the Help menu of your browser to find out how to change your cookie preferences.</p>
+            
+            <p>When you visit this website, the pages you see, along with a cookie, are downloaded to your device. Many websites do this, because cookies enable website publishers to do useful things like identify whether the device (and probably its user) has visited the website before. This is done on a repeat visit by checking to see, and finding, the cookie left there on the last visit.</p>
+            
+            <h3 >Third Party Cookies</h3>
+            
+            <p>During your visit, you may notice some cookies that are not related to this site. When you visit a page with content embedded from, for example, YouTube or Flickr, you may be presented with cookies from these websites. I do not control the dissemination of these cookies. You should check the third party websites for more information about these.</p>
+            
+            <h3 >How to control and delete cookies</h3>
+            
+            <p>I will not use cookies to collect personally identifiable information about you. However, if you wish to restrict or block the cookies which are set by this website, or indeed any other website, you can do this through your browser settings. The Help function within your browser should tell you how.</p>
+            
+            <p>Alternatively, you may wish to visit www.aboutcookies.org which contains comprehensive information on how to do this on a wide variety of browsers. You will also find details on how to delete cookies from your computer as well as more general information about cookies. For information on how to do this in the browser of your mobile phone you will need to refer to your handset manual.</p>
+            
+            <p>Please be aware that restricting cookies may impact on the functionality of this website.</p>
+            
+            <h3 >The cookies used on this website</h3>
+            
+            <table class="table">
+                <tbody><tr>
+                    <td style="width:20%;">_ga, _gid, _utma, _utmz</td>
+                    <td>
+                        <p>Google Analytics</p>
+                        <p>This is a service used to monitor traffic on this site. Google stores the information collected by the cookie on servers in the United States. Google may also transfer this information to third parties where required to do so by law, or where such third parties process the information on Google's behalf.</p>
+                    </td>
+                </tr>
+            </tbody></table>
+
+            <h3 >Links to Other Websites</h3>
+            <p>This website and other communications may contain links to other third-party websites. You should be aware that I do not have any control over other these third-party websites, and therefore I cannot be responsible for the protection and privacy of any information which you provide whilst visiting such sites. Such sites are not governed by this privacy notice. </p>
+            
+            <p>You should exercise caution and look at the privacy notice applicable to the website in question.</p>
+
+            <h3 >Contact</h3>
+            <p>For any questions about this Privacy Notice, or my approach to data protection, please contact me:</p>
+            <p><a href="mailto:hello@martinhicks.net">hello@martinhicks.net</a></p>
+      </div>
+
+      <hr class="w-1/2 mx-auto my-10 lg:my-20" />
+  </div>
+
+  <my-details></my-details>
+    
+</container>

@@ -1,0 +1,41 @@
+<script webc:type="render" webc:is="template">
+    function () {
+        if(!this.jsonld) {
+            return ``
+        } 
+        
+        let jsonLdContent = {}
+
+        switch(this.jsonld) {
+            case "article":
+
+                jsonLdContent = {
+                    "@context": "http://schema.org",
+                    "@type": "Article",
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": `${this.site.url}${this.page.url}`
+                    },
+                    "headline": this.page.title,
+                    "description": this.page.description,
+                    // "image": [
+                    //     `${this.site.url}${this.image.retina}`
+                    // ],
+                    "datePublished": this.page.date,
+                    //"dateModified": "2019-09-26T11:12:00+00:00",
+                    "author": {
+                        "@type": "Person",
+                        "@id": "martin-person"
+                    },
+                    "publisher": {
+                        "@type": "Person",
+                        "@id": "martin-person"
+                    }
+                }    
+
+            break;
+        }
+        
+        return `<script type="application/ld+json">${JSON.stringify(jsonLdContent)}<\/script>`;    
+    }
+</script>

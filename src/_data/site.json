@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org",
+    "url": "https://martinhicks.net",
+    "title": "Martin Hicks: Web app developer | AWS Certified | Manchester, UK",
+    "me": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "@id": "martin-person",
+        "name": "Martin Hicks",
+        "url": "https://martinhicks.net",
+        "telephone": "07580017812",
+        "sameAs": [
+            "https://indieweb.social/@martinhicks",
+            "https://twitter.com/martinhicks",
+            "https://www.linkedin.com/in/martin-hicks-8061748",
+            "https://github.com/hicksy",
+            "https://sinovi.uk/founding-partners/#martin-hicks"
+        ]
+    },
+    "rss": {
+        "json": "",
+        "xml": ""
+    }
+}

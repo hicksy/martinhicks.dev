@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17690686-1" webc:keep></script>
+        <script>
+        window.dataLayer = window.dataLayer || []; if (location.hostname !== 'martinhicks.net'){window['ga-disable-UA-17690686-1'] = true;}
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-17690686-1');
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" :href="bust('/css/style.css')" webc:keep>
+        
+        <title @html="pageTitle(meta.title, site.title)"></title>
+        <meta name="description" :content="meta.description" />
+        <meta name="keywords" content="freelance developer, web developer, freelance, manchester, Serverless, AWS, nodejs, Web Components, PHP, JS, CSS" />
+	    <meta name="copyright" :content="meta.copyright" />
+	    <meta name="author" content="Martin Hicks" />
+
+        <!-- <link rel="alternate" type="application/rss+xml" :href='site.rss.xml' />
+        <link rel="alternate" type="application/feed+json" :href='site.rss.json' /> -->
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <script type="application/ld+json" @html="dump(site.me)"></script>
+        <script type="application/ld+json" @html="webpageJsonLd(this)"></script>
+        
+        <script webc:is="json-ld"></script>
+    </head>
+
+    <body class="">
+        <div class="flex flex-col bg-white mx-auto max-w-6xl">
+            <site-header></site-header>
+            <main @html="content" ></main>
+            
+            <script  src="https://the-claw-webring-widget.netlify.app/the-claw-webring-widget.mjs" type="module" webc:keep></script>
+
+            <div class="mt-6 px-4">
+            <the-claw-webring-widget theme="light" webc:raw >
+            <!-- TO DO ADD FALLBACK CONTENT -->
+            </the-claw-webring-widget>
+        </div>
+            <site-footer></site-footer>
+        </div>
+    </body>
+</html>

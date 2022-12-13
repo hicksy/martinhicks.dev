@@ -1,0 +1,11 @@
+<div class="w-auto mx-auto mt-6 mb-6 lg:mb-12">
+  <nav class="block">
+    <ul class="space-x-2 px-6 relative font-medium rounded-full flex bg-[#363120] ring-4 ring-[#363120]/90 items-center text-sm  text-zinc-50  ">
+      
+      <header-nav-item href="/">Home</header-nav-item>
+      <header-nav-item href="/about-me">About</header-nav-item>
+      <!--<header-nav-item href="/articles">Journal</header-nav-item>-->
+      <header-nav-item href="#get-in-touch">Contact</header-nav-item>
+    </ul>
+  </nav>
+</div>

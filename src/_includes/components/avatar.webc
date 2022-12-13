@@ -1,0 +1,7 @@
+<a href="/" aria-label="Home" :class="tailwindMerge('pointer-events-auto', this.class)">
+    <script webc:type="render" webc:is="template">
+        function () {
+            return /*html*/`<img src="${this.src}" alt="" sizes="${this.type === 'large' ? '4rem' : '2.25rem'}" class="rounded-full object-cover " priority/>`
+        }
+    </script>
+</a>

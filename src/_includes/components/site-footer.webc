@@ -1,0 +1,23 @@
+
+  <footer class="mt-32 justify-center">
+    
+      <div class="relative mt-[72px] mb-16 w-full h-3">
+        <div class="zigzag zig"></div>
+        <div class="zigzag zag"></div>
+      </div>
+      <div class="pt-10 pb-16 px-4 flex flex-col items-center justify-center">
+          <div class="flex space-x-6 text-sm font-medium text-zinc-80">
+            <footer-nav-link href="/">Home</footer-nav-link>
+            <footer-nav-link href="/about-me">About</footer-nav-link>
+            <!-- <footer-nav-link href="/articles">Journal</footer-nav-link> -->
+            <footer-nav-link href="#get-in-touch">Contact</footer-nav-link>
+          </div>
+          <script webc:type="render" webc:is="template">
+            function () {
+              return /*html*/` 
+              <p class="text-xs ">&copy; ${new Date().getFullYear()} Martin Hicks. All rights reserved. <a href="/privacy" class="underline">Privacy notice</a></p>`
+            }
+          </script>
+        </div>
+      
+  </footer>

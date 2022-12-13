@@ -1,0 +1,10 @@
+<div :class="tailwindMerge('sm:px-8', this.class)">
+  <div class="mx-auto  ">
+      <div class="relative px-4 sm:px-8 ">
+        <div class="w-full mx-auto max-w-xl sm:max-w-5xl pt-4">
+            <slot></slot>
+        </div>
+      </div>
+  </div>
+</div>
+

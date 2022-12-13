@@ -1,0 +1,6 @@
+<a class="group -m-1 p-1" :href="href" target="_blank" :aria-label="this.arialabel" :role="this.role" :rel="this.rel">
+    <div class="flex items-center space-x-2">
+        <slot name="icon"></slot>
+        <slot name="content"></slot>
+    </div>
+</a>

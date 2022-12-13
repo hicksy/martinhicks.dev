@@ -1,0 +1,5 @@
+<li>
+    <a :href="href" :class="tailwindMerge('relative block px-3 py-2 transition hover:text-[#edbc1d]', this.class)">
+        <slot></slot>  
+    </a>
+</li>

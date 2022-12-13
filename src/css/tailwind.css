@@ -1,0 +1,57 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+@layer utilities {
+    
+    .zigzag {
+      position: absolute;
+      height: 10px;
+      width: 100%;
+    }
+
+    .zigzag {
+      position: absolute;
+      width: 100%;
+      /* Height set to clip correctly basically background-size/2 + line width */
+      height: 10px;
+    }
+    
+    .zig {
+        background: linear-gradient(45deg, transparent, transparent 49%, #a1a1aa 49%, transparent 51%);
+    }
+    .zag {
+        background: linear-gradient(-45deg, transparent, transparent 49%, #a1a1aa 49%, transparent 51%);
+    }
+    .zigzag {
+        /* Must be after background definition. */
+        background-size: 20px 20px;
+    }
+
+    
+
+  .full-width {
+		max-width: 100%;
+    max-height: 250px;
+		position: relative;
+    object-fit: cover;
+		width: 100%;
+
+	}
+  
+}
+
+
+
+
+@import 'tailwindcss/utilities';
+
+
+.privacy h3 {
+  @apply text-xl;
+  @apply my-2;
+  @apply font-semibold;
+}
+
+.privacy p {
+  @apply mb-2;
+}

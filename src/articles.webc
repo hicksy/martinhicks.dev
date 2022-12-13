@@ -1,0 +1,26 @@
+---
+meta: 
+  title: "Articles"
+  description: "Occasional thoughts"
+pagination:
+  data: collections.articles
+  size: 10
+  alias: articles
+  reverse: true
+layout: layouts/main.webc
+---
+
+    
+    <script webc:type="render" webc:is="template">
+        function () {
+            //console.log(this.pagination)
+            let articles = this.pagination.items;
+
+            return articles.map((article, idx) => /*html*/`
+            <article class="md:grid md:grid-cols-4 md:items-baseline">
+                <h1>${article.data.title}</h1>
+            </article>
+            `)
+            .join("");
+        }
+    </script>
