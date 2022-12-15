@@ -109,7 +109,9 @@ Easy to progressively enhance client-side capabilities by adding a script into t
 
 File based routing, with an API mechanism backed in.
 
-For example, let's say you have the following page `/app/pages/index.html`, and the following api route `/app/api/index.mjs` the returned JSON from either the `get` handler, or `post` handler of the API will be made available to any custom elements within index.html automatically. The server-side mechanism automatically routes to the `get` handler if the request method is `GET` and likewise to the `post` handler if the request is a `POST`.
+For example, let's say you have the following page `/app/pages/index.html`, and the following api route `/app/api/index.mjs` the returned JSON from either the `get` handler, or `post` handler of the API will be made available to any custom elements within index.html automatically. 
+
+The server-side mechanism automatically routes to the `get` handler if the request method is `GET` and likewise to the `post` handler if the request is a `POST`.
 
 This is similar in nature to Remix's actions (post) and loaders (gets), but split across different files. 
 
