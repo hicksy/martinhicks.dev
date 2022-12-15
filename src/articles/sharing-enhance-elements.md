@@ -60,7 +60,7 @@ But what about if you want to bring in a shared UI library maintained by a diffe
 
 After a search on the [Enhance Discord](https://enhance.dev/discord) _(which is great by the way - definitely head there for help / guidance / cool things people are building)_, I couldn't find anything baked in. 
 
-I did see a comment from Macdonst (one of the begin/enhance team), who was explaining how you could do all of your imports in an `/app/elements.mjs` file, and then they would be available throughout your app just like a first-party element you've created in `/app/elements' - nice. 
+I did see a comment from Macdonst (one of the begin/enhance team), who was explaining how you could do all of your imports in an `/app/elements.mjs` file, and then they would be available throughout your app just like a first-party element you've created in `/app/elements` - nice. 
 
 He went on... 
 >The above is begging to be a plug-in.
