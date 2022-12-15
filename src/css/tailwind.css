@@ -55,3 +55,7 @@
 .privacy p {
   @apply mb-2;
 }
+
+.prose h1 {
+  @apply text-2xl
+}

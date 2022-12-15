@@ -6,21 +6,32 @@ jsonld: article
   function () {
       
       return /*html*/`
-      <container class="mt-16 lg:mt-32">
-        <div class="xl:relative">
-          <div class="mx-auto max-w-2xl">
+      <container >
+        <div class="flex flex-col max-w-2xl mx-auto justify-center ">
+
+          <div class="mt-4">
             
             <article>
               <header class="flex flex-col">
-                <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">${this.title}</h1>
-                <time :date-time="date" class="order-first flex items-center text-base text-zinc-500 dark:text-zinc-500">
+                <img class="w-full object-cover max-h-[380px]" alt="${this.image.alt}" src="${this.image.path}" />
+                <time :date-time="date" class="flex items-center text-base text-zinc-500 mt-6 ">
                   <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
                   <span class="ml-3">${this.date}</span>
                 </time>
+                <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">${this.title}</h1>
               </header>
-              <prose class="mt-8">${this.content}</prose>
+              <article-prose class="mt-8">${this.content}</article-prose>
             </article>
           </div>
+
+          
+        </div>
+
+        <div class="my-4">
+
+          <img src="/images/5F8AB69C-FA08-4C25-B932-74D76EBB7721.jpg" alt="Me and my wife, Helen, lying on the grass in summer. " width="200" height="200" class="mt-8 max-w-[100px] md:max-w-[200px] mx-auto aspect-square ring-2 ring-zinc-500/40 rotate-45 rounded-full bg-zinc-100 object-cover"/>
+
+          <my-details></my-details>
         </div>
       </container>
       `

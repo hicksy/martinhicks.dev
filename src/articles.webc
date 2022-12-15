@@ -10,17 +10,56 @@ pagination:
 layout: layouts/main.webc
 ---
 
+
+<container >
+  <div class="flex flex-col max-w-2xl mx-auto justify-center ">
+  
     
+    
+      
+      <h1 class="text-4xl font-bold tracking-tight text-zinc-800  sm:text-5xl mt-4">
+       Journal
+      </h1>    
+
+      <div class="mt-6">
     <script webc:type="render" webc:is="template">
         function () {
             //console.log(this.pagination)
             let articles = this.pagination.items;
 
             return articles.map((article, idx) => /*html*/`
-            <article class="md:grid md:grid-cols-4 md:items-baseline">
-                <h1>${article.data.title}</h1>
-            </article>
+            
+            <div class="flex flex-col sm:grid sm:grid-flow-col sm:auto-cols-[1fr_minmax(auto,1.1fr)] w-full items-center justify-center mb-6">
+              <div class="flex content-start items-start justify-start place-content-start">
+                  <div class="prose">
+                        <a href="${article.data.url}"><img class="full-width mb-0" src="${article.data.image.path}" width="345" height="236" alt="${article.data.image.alt}" /></a>
+                        <h1 class="mb-0"><a href="${article.data.url}">${article.data.title}</a></h1>
+                        <span >
+                          8th December 2022
+                        </span>
+
+                        <p>${article.data.description}</p>
+                        <a href="${article.data.url}">
+                          Read the article
+                        </a>
+                    </div>
+                </div>
+              </div>
+            </div>
             `)
             .join("");
         }
     </script>
+</div>
+
+  <hr>
+
+  </div>
+
+  <div class="my-4">
+
+    <img src="/images/5F8AB69C-FA08-4C25-B932-74D76EBB7721.jpg" alt="Me and my wife, Helen, lying on the grass in summer. " width="200" height="200" class="mt-8 max-w-[100px] md:max-w-[200px] mx-auto aspect-square ring-2 ring-zinc-500/40 rotate-45 rounded-full bg-zinc-100 object-cover"/>
+
+    <my-details></my-details>
+  </div>
+</container>

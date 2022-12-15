@@ -1,0 +1,5 @@
+<div :class="tailwindMerge('prose', this.class)">
+    <slot></slot>
+</div>
+  
+  

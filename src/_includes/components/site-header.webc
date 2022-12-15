@@ -4,7 +4,7 @@
       
       <header-nav-item href="/">Home</header-nav-item>
       <header-nav-item href="/about-me">About</header-nav-item>
-      <!--<header-nav-item href="/articles">Journal</header-nav-item>-->
+      <header-nav-item href="/articles">Journal</header-nav-item>
       <header-nav-item href="#get-in-touch">Contact</header-nav-item>
     </ul>
   </nav>

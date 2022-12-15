@@ -3,5 +3,13 @@
     "meta": {
         "description": "Martin Hicks, web developer and cloud consultant based in Manchester, UK",
         "title": "Martin Hicks: Web app developer | AWS Certified | Manchester, UK"
+    },
+    "pagination": {
+        "data": "collections.articles",
+        "size": 10,
+        "alias": "articles",
+        "reverse": true
     }
+  
+  
 }

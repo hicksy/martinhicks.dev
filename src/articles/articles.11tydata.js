@@ -11,6 +11,10 @@ module.exports = {
   ],
   eleventyComputed: {
     date: data => dayjs(data.date).format("Do MMMM YYYY"),
+    title: data => data.title,
+    description: data => data.description,
+    image: data => data.image, 
+    url: data => data.page.url,
     meta: {
       title: data => data.title,
       description: data => data.description
