@@ -19,8 +19,8 @@
 	    <meta name="copyright" :content="meta.copyright" />
 	    <meta name="author" content="Martin Hicks" />
 
-        <!-- <link rel="alternate" type="application/rss+xml" :href='site.rss.xml' />
-        <link rel="alternate" type="application/feed+json" :href='site.rss.json' /> -->
+        <link rel="alternate" type="application/rss+xml" :href='site.rss.xml' />
+        <!-- <link rel="alternate" type="application/feed+json" :href='site.rss.json' /> -->
 
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

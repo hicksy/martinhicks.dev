@@ -1,9 +1,10 @@
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const dayjs = require("dayjs");
 const { twMerge } = require('tailwind-merge')
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
-  
+  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginWebc, {
     // Glob to find no-import global components
 		components: "src/_includes/components/**/*.webc",
