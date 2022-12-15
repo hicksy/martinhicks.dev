@@ -13,7 +13,7 @@ jsonld: article
             
             <article>
               <header class="flex flex-col">
-                <img class="w-full object-cover max-h-[380px]" alt="${this.image.alt}" src="${this.image.path}" />
+                <img class="w-full object-cover max-h-[273px]" width="365" height="273" alt="${this.image.alt}" src="${this.image.path}" />
                 <time :date-time="date" class="flex items-center text-base text-zinc-500 mt-6 ">
                   <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
                   <span class="ml-3">${this.date}</span>
