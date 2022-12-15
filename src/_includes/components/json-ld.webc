@@ -5,7 +5,7 @@
         } 
         
         let jsonLdContent = {}
-
+       
         switch(this.jsonld) {
             case "article":
 
@@ -36,6 +36,6 @@
             break;
         }
         
-        return `<script type="application/ld+json">${JSON.stringify(jsonLdContent)}<\/script>`;    
+        return `<script webc:keep type="application/ld+json">${JSON.stringify(jsonLdContent)}<\/script>`;    
     }
 </script>

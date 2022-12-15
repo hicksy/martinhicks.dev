@@ -31,10 +31,10 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
-        <script type="application/ld+json" @html="dump(site.me)"></script>
-        <script type="application/ld+json" @html="webpageJsonLd(this)"></script>
+        <script webc:keep type="application/ld+json" @html="dump(site.me)"></script>
+        <script webc:keep type="application/ld+json" @html="webpageJsonLd(this)"></script>
         
-        <script webc:is="json-ld"></script>
+        <script webc:is="json-ld" ></script>
     </head>
 
     <body class="">
