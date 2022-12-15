@@ -10,7 +10,7 @@ module.exports = {
     "articles"
   ],
   eleventyComputed: {
-    date: data => dayjs(data.date).format("Do MMMM YYYY"),
+    date: data => dayjs(data.page.date).format("Do MMMM YYYY"),
     title: data => data.title,
     description: data => data.description,
     image: data => data.image, 
