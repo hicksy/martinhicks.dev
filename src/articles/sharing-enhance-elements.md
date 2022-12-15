@@ -116,7 +116,7 @@ I'd previously had a go at an Architect plugin and got a little lost. Since then
 
 I also had a good look at some of the [plugins listed in their repository](https://github.com/architect/plugins), which helped me figure things out. 
 
-After an afternoon or so's work I had an acceptable _(just about)_ of a version plugin which works as follows:
+After an afternoon or so's work I had an acceptable _(just about)_ version of a plugin which works as follows:
 
 1. You add a component package or UI library to the .arc file under the plugin's unique @ pragma - `@shared-enhance-components-plugin` - this informs the plugin which external packages to import component elements from.
 2. On arc hydration (which happens during sandbox start, and pre arc deploy), the plugin analyses the available functions that can be imported from the given package:
