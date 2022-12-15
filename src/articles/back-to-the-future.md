@@ -26,7 +26,7 @@ Thankfully a long overdue course correction is taking place.
 
 I really enjoyed building with Remix - it's well thought out, and makes working with React, well... more _enjoyable_. 
 
-We were able to scaffold out a broad approach to the app pretty seamlessly, and the build out was relatively pain free. We deployed the app to AWS using what Remix call their [Grunge stack](https://github.com/remix-run/grunge-stack) - which basically pairs Remix with Architect _(a tool I'm already very familiar with)_ and provides a catch-all Lambda to power the server-side code.
+We were able to scaffold out a broad approach to the app pretty seamlessly, and the build out was relatively pain free. We deployed the app to AWS using what Remix call their [Grunge stack](https://github.com/remix-run/grunge-stack) - which basically pairs Remix with [Architect](https://arc.codes) _(a tool I'm already very familiar with)_ and provides a catch-all Lambda to power the server-side code.
 
 I believe Remix can be deployed anywhere that supports the Node.js runtime, and I think it even runs at the edge on web-workers - which is pretty cool.
 
