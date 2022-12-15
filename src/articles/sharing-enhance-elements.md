@@ -175,7 +175,7 @@ hicksy/enhance-csrf 'elements'
 enhance/form-elements
 ```
 
-Note in the above example the package we've just installed is referenced just by it's name _(dropping the @ gain to avoid collision with arc pragmas)_ - we know by looking at this package all of it's components are named exports [from a route index.js file](https://github.com/enhance-dev/form-elements/blob/main/index.js). 
+Note in the above example the package we've just installed is referenced just by it's name _(dropping the @ again to avoid collision with arc pragmas)_ - we know by looking at this package all of it's components are named exports [from a route index.js file](https://github.com/enhance-dev/form-elements/blob/main/index.js). 
 
 For [@hicksy/enhance-csrf](https://www.npmjs.com/package/@hicksy/enhance-csrf) package, we pass a second arg to the plugin, this tells the plugin that the components are individual files within [the specific folder](https://github.com/hicksy/enhance-csrf/tree/main/elements). 
 

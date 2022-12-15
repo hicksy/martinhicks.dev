@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17690686-1" webc:keep></script>
-        <script>
+        <script webc:keep>
         window.dataLayer = window.dataLayer || []; if (location.hostname !== 'martinhicks.net'){window['ga-disable-UA-17690686-1'] = true;}
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
