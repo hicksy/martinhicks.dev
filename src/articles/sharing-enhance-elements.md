@@ -110,7 +110,7 @@ Also, defining a map between the tag name and pure function doesn't seem to have
 
 Enhance (the way I'm using it), is wrapped with [Architect](https://arc.codes). Meaning you can easily deploy your enhance app to [AWS](https://aws.amazon.com/lambda/), or to [Begin](https://begin.com). 
 
-Because it uses Architect's sandbox to run locally, and its hydration mechanism to hydrate you Lambda function code before deployment, you can also tap into Arc's powerful plug-in system. 
+Because it uses Architect's sandbox to run locally, and its hydration mechanism to hydrate your Lambda function code before deployment, you can also tap into Arc's powerful plug-in system. 
 
 I'd previously had a go at an Architect plugin and got a little lost. Since then _(18 months or so ago)_, they've massively [expanded their plug-in docs](https://arc.codes/docs/en/guides/plugins/overview) and improved the available lifecycle hooks you can tap into. 
 
