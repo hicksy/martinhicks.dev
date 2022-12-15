@@ -230,7 +230,7 @@ I followed this [guide to npm publishing](https://zellwk.com/blog/publish-to-npm
 
 A small plugin that hopefully eases the use of shared Enhance elements and hopefully making it more compelling for authors to share libraries of their elements for others to use?
 
-There's no doubt a few wrinkles will be discovered, and the plug code could do with a tidy, but I'm pretty happy with it. 
+There's no doubt a few wrinkles will be discovered, and the plugin code could do with a tidy, but I'm pretty happy with it. 
 
 Get in [touch on GitHub](https://github.com/hicksy/hicksy-shared-enhance-components-plugin) if there's any issues, improvements or feature ideas.  
 
