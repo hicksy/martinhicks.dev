@@ -4,6 +4,7 @@ description: "This post introduces a new arc plugin for Enhance projects that I'
 date: 2022-12-15
 image: 
   path: /images/articles/klara-kulikova-QATxlTPJImo-unsplash.jpg
+  webp: /images/articles/klara-kulikova-QATxlTPJImo-unsplash.webp
   alt: A picture of people sharing a pizza
 ---
 

@@ -27,7 +27,13 @@
                 <div class="flex flex-col sm:grid sm:grid-flow-col sm:auto-cols-[1fr_minmax(auto,1.1fr)] w-full items-center justify-center mb-6">
                   <div class="flex content-start items-start justify-start place-content-start">
                       <div class="prose">
-                            <a href="${article.data.url}"><img class="full-width mb-2" src="${article.data.image.path}" width="345" height="236" alt="${article.data.image.alt}" /></a>
+                            <a href="${article.data.url}">
+                                <picture class="flex w-full" >
+                                    <source srcset="${article.data.image.webp}" type="image/webp">
+                                    <img class=" full-width mb-2" src="${article.data.image.path}" width="345" height="236" alt="${article.data.image.alt}">
+                                </picture>
+                                
+                            </a>
                             <h1 class="mb-2"><a href="${article.data.url}">${article.data.title}</a></h1>
                             <span >
                              ${article.data.date}
