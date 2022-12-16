@@ -10,34 +10,37 @@
 <container >
   <div class="flex flex-col max-w-2xl mx-auto justify-center ">
   
-    <img src="/images/5F8AB69C-FA08-4C25-B932-74D76EBB7721.jpg" alt="Me and my wife, Helen, lying on the grass in summer. " width="200" height="200" class="max-w-[100px] md:max-w-[200px] mx-auto aspect-square ring-2 ring-zinc-500/40 rotate-45 rounded-full bg-zinc-100 object-cover"/>
+    <picture >
+      <source srcset="/images/5F8AB69C-FA08-4C25-B932-74D76EBB7721.webp" type="image/webp">
+      <img src="/images/5F8AB69C-FA08-4C25-B932-74D76EBB7721.jpg" alt="Me and my wife, Helen, lying on the grass in summer. " width="200" height="200" class="max-w-[100px] md:max-w-[200px] mx-auto aspect-square ring-2 ring-zinc-500/40 rotate-45 rounded-full bg-zinc-100 object-cover"/>
+    </picture> 
     
       
-      <h1 class="text-4xl font-bold tracking-tight text-zinc-800  sm:text-5xl mt-4">
-        I design, build and maintain software for the web platform. 
-      </h1>
-      <div class="mt-6 space-y-7 text-base text-zinc-600 ">
-        <p>
-          I am a web developer with over 18 years of experience in designing, building, and maintaining software for the web platform. I specialise in creating web and mobile apps using HTML, CSS, and JavaScript, and I believe strongly in the principles of the open web and progressive enhancement.
-        </p>
+    <h1 class="text-4xl font-bold tracking-tight text-zinc-800  sm:text-5xl mt-4">
+      I design, build and maintain software for the web platform. 
+    </h1>
+    <div class="mt-6 space-y-7 text-base text-zinc-600 ">
+      <p>
+        I am a web developer with over 18 years of experience in designing, building, and maintaining software for the web platform. I specialise in creating web and mobile apps using HTML, CSS, and JavaScript, and I believe strongly in the principles of the open web and progressive enhancement.
+      </p>
 
-        <p>In 2018, I founded the software development studio Si Novi, where we offer focused development and consultancy services. We work with UI/UX designers to provide development support, and we also collaborate with internal development teams to provide expert consultancy and experience to new or growing teams.</p>
+      <p>In 2018, I founded the software development studio Si Novi, where we offer focused development and consultancy services. We work with UI/UX designers to provide development support, and we also collaborate with internal development teams to provide expert consultancy and experience to new or growing teams.</p>
 
-        <p>Throughout my career, I have had the opportunity to work with some fantastic people and innovative technologies. One of the highlights of my career was reaching #2 in the App Store (second only to Facebook Messenger) with the Telegraph Clearing app, which I produced from 2011 to 2017.</p>
+      <p>Throughout my career, I have had the opportunity to work with some fantastic people and innovative technologies. One of the highlights of my career was reaching #2 in the App Store (second only to Facebook Messenger) with the Telegraph Clearing app, which I produced from 2011 to 2017.</p>
 
-        <p>I have also worked extensively with Amazon Web Services (AWS) for the past 13 years, and I am currently an AWS Certified Developer. In early 2023, I plan to sit for either the Solutions Architect Professional exam or the DevOps Engineer Professional exam.</p>
-          
-        <p>With AWS, I started out using technologies like RDS, EC2, and Elasticbeanstalk to create scalable infrastructure for demanding and popular apps and services. Nowadays, I prefer a serverless approach, using AWS Lambda, DynamoDB (or MongoDB), S3 storage, API Gateway, CloudFront, and WAF to create fast, scalable, and secure web apps. This stack allows the data layer to serve with millisecond latency, while the function layer can scale horizontally to handle any demands. </p>
+      <p>I have also worked extensively with Amazon Web Services (AWS) for the past 13 years, and I am currently an AWS Certified Developer. In early 2023, I plan to sit for either the Solutions Architect Professional exam or the DevOps Engineer Professional exam.</p>
         
-        <p>In the past, I worked primarily with PHP, using MVC-based frameworks like Yii 2 and Laravel. Over the past five years I've tended to favour Node.js as my back-end runtime of choice. At Si Novi, we regularly maintain and support apps built with these technologies.</p>
-        <p>This past year, we have built applications using Remix, which is based on React but doesn't fight against the web platform. This approach will be my go-to for projects that require React.</p>
-        <p>I am increasingly interested in Web Components, and have dabbled with them in the past using StencilJS. I used Stencil to create data-driven and animated widgets for the BBC's Super League Show in 2018, which integrated with CasperCG for broadcast display. 
-          More recently, I have been using Enhance, which shares the web platform first principles of Remix but allows you to author everything using standards-compliant HTML, CSS, and JavaScript (if needed), rather than JSX. I love this approach, and as it's created by the team behind arc.codes (Architect) it's designed to provide a perfect front-end system for Lambda based web apps.</p>
+      <p>With AWS, I started out using technologies like RDS, EC2, and Elasticbeanstalk to create scalable infrastructure for demanding and popular apps and services. Nowadays, I prefer a serverless approach, using AWS Lambda, DynamoDB (or MongoDB), S3 storage, API Gateway, CloudFront, and WAF to create fast, scalable, and secure web apps. This stack allows the data layer to serve with millisecond latency, while the function layer can scale horizontally to handle any demands. </p>
       
-        <p>In my personal life, I am a husband and father of two young children. I enjoy listening to music and playing my bass guitar. I've recently started volunteering as a coach for my son's U9 football team, and I have been taking the FA Playmaker course and Level 1 coaching to improve my skills.</p>
-      </div>
+      <p>In the past, I worked primarily with PHP, using MVC-based frameworks like Yii 2 and Laravel. Over the past five years I've tended to favour Node.js as my back-end runtime of choice. At Si Novi, we regularly maintain and support apps built with these technologies.</p>
+      <p>This past year, we have built applications using Remix, which is based on React but doesn't fight against the web platform. This approach will be my go-to for projects that require React.</p>
+      <p>I am increasingly interested in Web Components, and have dabbled with them in the past using StencilJS. I used Stencil to create data-driven and animated widgets for the BBC's Super League Show in 2018, which integrated with CasperCG for broadcast display. 
+        More recently, I have been using Enhance, which shares the web platform first principles of Remix but allows you to author everything using standards-compliant HTML, CSS, and JavaScript (if needed), rather than JSX. I love this approach, and as it's created by the team behind arc.codes (Architect) it's designed to provide a perfect front-end system for Lambda based web apps.</p>
+    
+      <p>In my personal life, I am a husband and father of two young children. I enjoy listening to music and playing my bass guitar. I've recently started volunteering as a coach for my son's U9 football team, and I have been taking the FA Playmaker course and Level 1 coaching to improve my skills.</p>
+    </div>
 
-      <hr class="w-1/2 mx-auto my-10 lg:my-20" />
+    <hr class="w-1/2 mx-auto my-10 lg:my-20" />
   </div>
 
   <my-details></my-details>
