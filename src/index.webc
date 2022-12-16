@@ -33,7 +33,7 @@
         
                     return articles.map((article, idx) => /*html*/`
                     
-                    <div class="prose relative min-h-full pb-8">
+                    <div class="prose relative pb-8">
                             <a href="${article.data.url}">
                                 <picture class="flex w-full " >
                                     <source srcset="${article.data.image.webp}" type="image/webp">
