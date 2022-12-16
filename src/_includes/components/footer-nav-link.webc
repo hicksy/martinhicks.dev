@@ -1,3 +1,3 @@
-<a :href="this.href" :class="tailwindMerge('transition hover:text-[#edbc1d]', this.class)">
+<a :href="this.href" :class="tailwindMerge('hover:text-[#edbc1d]', this.class)">
     <slot></slot>
 </a>

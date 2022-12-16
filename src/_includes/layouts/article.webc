@@ -18,7 +18,7 @@ jsonld: article
                     <img class="w-full full-width mb-2 object-cover" src="${this.image.path}" width="345" height="236" alt="${this.image.alt}">
                 </picture> 
                 <time :date-time="date" class="flex items-center text-base text-zinc-500 mt-6 ">
-                  <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+                  <span class="h-4 w-0.5 rounded-full bg-zinc-200"></span>
                   <span class="ml-3">${this.date}</span>
                 </time>
                 <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">${this.title}</h1>

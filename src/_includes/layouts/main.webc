@@ -15,12 +15,15 @@
         
         <title @html="pageTitle(meta.title, site.title)"></title>
         <meta name="description" :content="meta.description" />
-        <meta name="keywords" content="freelance developer, web developer, freelance, manchester, Serverless, AWS, nodejs, Web Components, PHP, JS, CSS" />
-	    <meta name="copyright" :content="meta.copyright" />
+        <meta name="keywords" content="AWS consultant, AWS, web developer, web dev, Serverless, AWS, nodejs, Web Components, JS, HTML, JavaScript" />
 	    <meta name="author" content="Martin Hicks" />
 
         <link rel="alternate" type="application/rss+xml" :href='site.rss.xml' />
-        <!-- <link rel="alternate" type="application/feed+json" :href='site.rss.json' /> -->
+        
+        <link href="mailto:hello@martinhicks.net" rel="me">
+        <link href="https://twitter.com/martinhicks" rel="me">
+        <link href="https://github.com/hicksy" rel="me">
+        <link href="https://indieweb.social/@martinhicks" rel="me">
 
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
