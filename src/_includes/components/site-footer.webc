@@ -9,7 +9,7 @@
           <div class="flex space-x-6 text-sm font-medium text-zinc-80">
             <footer-nav-link href="/">Home</footer-nav-link>
             <footer-nav-link href="/about-me">About</footer-nav-link>
-            <!-- <footer-nav-link href="/articles">Journal</footer-nav-link> -->
+            <footer-nav-link href="/articles">Journal</footer-nav-link>
             <footer-nav-link href="#get-in-touch">Contact</footer-nav-link>
           </div>
           <script webc:type="render" webc:is="template">
