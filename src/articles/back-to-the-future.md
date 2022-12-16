@@ -4,6 +4,7 @@ description: "As 2022 draws to a close I wanted to reflect on a welcome change i
 date: 2022-12-12
 image: 
   path: /images/articles/back-to-the-future.jpeg
+  webp: /images/articles/back-to-the-future.webp
   alt: Graphic of promotional image for the Back to the Future film
 ---
 

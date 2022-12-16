@@ -29,13 +29,43 @@
 
     
 
-  .full-width {
-		max-width: 100%;
-    max-height: 250px;
-		position: relative;
-    object-fit: cover;
-		width: 100%;
+  
 
+  .full-width {
+		left: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+		max-width: 100vw;
+		position: relative;
+		right: 50%;
+		width: 100vw;
+		min-height: 236px;
+		object-fit: cover;
+	}
+
+  img.full-width {
+    max-height: 236px;
+  }
+
+	@screen md {
+    .full-width {
+      left: unset;
+			margin-left: unset;
+			margin-right: unset;
+			max-width: unset;
+			width: unset;
+			right: unset;
+			width: unset;
+    }
+		img.full-width {
+			max-width: 280px;
+		}	
+	}
+
+	@screen lg {
+		img.full-width {
+			max-width: 345px;
+		}
 	}
   
 }

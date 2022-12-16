@@ -3,8 +3,8 @@ title: Sharing Enhance elements between projects
 description: "This post introduces a new arc plugin for Enhance projects that I've recently published, with the catchy name 'shared-enhance-components-plugin'"
 date: 2022-12-15
 image: 
-  path: /images/articles/klara-kulikova-QATxlTPJImo-unsplash.jpg
-  webp: /images/articles/klara-kulikova-QATxlTPJImo-unsplash.webp
+  webp: /images/articles/klara-kulikova-WcV2YkM3Dls-unsplash.webp
+  path: /images/articles/klara-kulikova-WcV2YkM3Dls-unsplash.jpg
   alt: A picture of people sharing a pizza
 ---
 

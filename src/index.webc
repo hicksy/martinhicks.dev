@@ -16,43 +16,42 @@
 
         </div>
         <hr class="block w-1/2 mx-auto lg:hidden my-8">
-        <h2 class="text-2xl font-semibold">Latest posts</h2>
+    </div>
+    <div class="full-width flex flex-col mx-auto justify-center mt-4 md:bg-blue-50 p-2 py-8 md:p-8 rounded-2xl">
+        <h2 class="font-semibold uppercase">Latest posts</h2>
+       
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 auto-cols-auto md:auto-rows-[1fr] mb-8">
         <script webc:type="render" webc:is="template">
-            function () {
-                //console.log(this.pagination)
-                let articles = this.pagination.items;
-    
-                return articles.map((article, idx) => /*html*/`
-                
-                <div class="flex flex-col sm:grid sm:grid-flow-col sm:auto-cols-[1fr_minmax(auto,1.1fr)] w-full items-center justify-center mb-6">
-                  <div class="flex content-start items-start justify-start place-content-start">
-                      <div class="prose">
+                function () {
+                    //console.log(this.pagination)
+                    let articles = this.pagination.items;
+        
+                    return articles.map((article, idx) => /*html*/`
+                    
+                    <div class="prose relative min-h-full pb-8">
                             <a href="${article.data.url}">
-                                <picture class="flex w-full" >
+                                <picture class="flex w-full " >
                                     <source srcset="${article.data.image.webp}" type="image/webp">
                                     <img class=" full-width mb-2" src="${article.data.image.path}" width="345" height="236" alt="${article.data.image.alt}">
-                                </picture>
-                                
+                                </picture> 
                             </a>
-                            <h1 class="mb-2"><a href="${article.data.url}">${article.data.title}</a></h1>
                             <span >
-                             ${article.data.date}
+                            ${article.data.date}
                             </span>
+                            <h1 class="mb-2 font-semibold"><a class=" no-underline" href="${article.data.url}">${article.data.title}</a></h1>
                             <p>${article.data.description}</p>
-                            <a href="${article.data.url}">
-                              Read the article
+                            <a class="absolute bottom-2 " href="${article.data.url}">
+                                Read the article
                             </a>
                         </div>
-                    </div>
-                  </div>
-                </div>
-                <hr class="w-1/2 mx-auto">
-                `)
-                .join("");
-            }
-        </script>
+                
+                    `)
+                    .join("");
+                }
+            </script>
+        </div>
 
-       
+        <hr class="w-1/2 mx-auto">
     </div>
 
     <my-details></my-details>
