@@ -39,7 +39,7 @@ We had collections in an array within a standalone json file _(eg articles.json)
 
 There was a key thing wrong with it though **- it was a bloody pain to use.** 
 
-At the time we didn’t know about the [front matter](https://www.11ty.dev/docs/data-frontmatter/) syantax, which in hindsight might’ve helped. 
+At the time we didn’t know about the [front matter](https://www.11ty.dev/docs/data-frontmatter/) syntax, which in hindsight might’ve helped. 
 
 But the key issue was our node CLI processing engine was written using a jquery compatible dom lib - [Cheerio](https://www.npmjs.com/package/cheerio), and a load of [Grunt](https://gruntjs.com/) hooks. 
 
@@ -191,7 +191,7 @@ Perfect.
 
 Other wins are;
 
-- **Using web components within the [head element](https://www.11ty.dev/docs/languages/webc/#components)** - this isn’t allowed by the Web Component spec I don't think, but given you may have a Webc component that just provides HYML you can use the `webc:is` attribute to upgrade a standard element to a WebC component just for templating purposes _(but only if it just returns html)_
+- **Using web components within the [head element](https://www.11ty.dev/docs/languages/webc/#components)** - this isn’t allowed by the Web Component spec I don't think, but given you may have a Webc component that just provides HTML you can use the `webc:is` attribute to upgrade a standard element to a WebC component just for templating purposes _(but only if it just returns html)_
 
 Eg:
 
@@ -201,7 +201,7 @@ Eg:
 
 The above `script` tag in my head, will be ran using my component `json-ld`, which basically adds some dynamic json-ld for articles on this site, and excludes if it's not an article page. 
 
-- WebC components can include render only Js functions to iterate collections 
+- **WebC components can include render only Js functions to iterate collections**
 
 ```
 {% raw %}
@@ -380,9 +380,9 @@ It’d be great if the starter cli command could ask you where you’d like your
 
 6. **Tailwind**
 
-Tailwind works really well with a component based , so 11ty and webc is no different, outputting only the css for classes that you’ve actually used in your pages.
+Tailwind works really well with a component based system, so 11ty and webc is no different, outputting only the css for classes that you’ve actually used in your pages.
 
-To make that work better, I pointed tailwind config to the output folder _(`_site` in my case) to look for content, rather than the src directory, and made it run after 11ty prod build.
+To make that work better, I pointed tailwind config to the output folder _(`_site` in my case)_ to look for content, rather than the src directory, and made it run after 11ty prod build.
 
 ```
 //tailwind.config.js
@@ -393,7 +393,7 @@ module.exports = {
 
 ```
 
-This way any draft components I’ve built but not yet used, won’t have any of its unique classes included in the final production css output. Until they’re actually in idled in one of the html pages.
+This way any draft components I’ve built but not yet used, won’t have any of its unique classes included in the final production css output. Until they’re actually included in one of the html pages.
 
 I also needed a way to allow component modification throughout the site (more so on Si Novi). To do that I used the Tailwind Merge [package](https://www.npmjs.com/package/tailwind-merge) and created a helper function within `.eleventy.js` that can be used on each component. 
 
@@ -403,7 +403,7 @@ eleventyConfig.addFilter("tailwindMerge", function(defaultClasses, overrideClass
 });
 ```
 
-This means I can pass in overriding css attributes at the point of using the component and the Twmerge function (as it’s tailwind aware), replaces the defaults with the overrides.
+This means I can pass in overriding css attributes at the point of using the component and the `twMerge` function (as it’s tailwind aware), replaces the defaults with the overrides.
 
 Within a WebC component:
 
