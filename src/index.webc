@@ -22,7 +22,7 @@
         </div>
         <hr class="block w-1/2 mx-auto lg:hidden my-8">
     </div>
-    <div class="full-width flex flex-col mx-auto justify-center mt-4 md:bg-blue-50 md:p-8 rounded-2xl">
+    <div class="full-width flex flex-col mx-auto justify-center mt-4 md:bg-zinc-50 md:p-8 rounded-2xl">
         <h2 class="font-semibold uppercase pl-2 md:pl-0">Latest posts</h2>
        
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 auto-cols-auto md:auto-rows-[1fr] mb-8 p-8 md:p-0">
