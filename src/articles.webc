@@ -36,10 +36,10 @@ layout: layouts/main.webc
                                     <img class=" full-width mb-2" src="${article.data.image.path}" width="345" height="236" alt="${article.data.image.alt}">
                                 </picture> 
                             </a>
-                            <span >
+                            <span class="!text-sm">
                             ${article.data.date}
                             </span>
-                            <h1 class="mb-2 font-semibold"><a class=" no-underline" href="${article.data.url}">${article.data.title}</a></h1>
+                            <h1 class="!text-xl mb-2 font-semibold"><a class=" no-underline" href="${article.data.url}">${article.data.title}</a></h1>
                             <p>${article.data.description}</p>
                             <a class="absolute bottom-2 " href="${article.data.url}">
                                 Read the article
@@ -56,13 +56,5 @@ layout: layouts/main.webc
 
   </div>
 
-  <div class="my-4">
-
-    <picture >
-      <source srcset="/images/5F8AB69C-FA08-4C25-B932-74D76EBB7721.webp" type="image/webp">
-      <img loading="lazy" src="/images/5F8AB69C-FA08-4C25-B932-74D76EBB7721.jpg" alt="Me and my wife, Helen, lying on the grass in summer. " width="100" height="100" class="max-w-[100px] md:max-w-[200px] mx-auto aspect-square ring-2 ring-zinc-500/40 rotate-45 rounded-full bg-zinc-100 object-cover"/>
-    </picture> 
-
-    <my-details></my-details>
-  </div>
+  <my-details mode="full"></my-details>
 </container>

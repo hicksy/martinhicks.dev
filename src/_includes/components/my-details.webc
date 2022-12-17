@@ -1,13 +1,19 @@
+<div webc:if="this.mode === 'full'" class="mt-8 mb-2">
+
+    <my-avatar width="100" height="100"></my-avatar>
+
+</div>
+
 <div class="w-full flex flex-col lg:flex-row lg:gap-6 text-zinc-800">
-              
+
     <div id="get-in-touch" class="mt-8 w-full rounded-2xl border border-zinc-100 p-6 ">
-        <h2  class="flex text-sm font-semibold text-zinc-500 uppercase ">
+        <panel-header>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-              </svg>
-                        
+            </svg>
+
             <span class="ml-3">Get in touch</span>
-        </h2>
+        </panel-header>
         <social-link href="mailto:hello@martinhicks.net">
             <icon-mail slot="icon" class="w-8 h-8"></icon-mail>
             <span slot="content">hello@martinhicks.net</span>
@@ -17,136 +23,143 @@
             <span slot="content">+44 (0)7580 017812</span>
         </social-link>
 
-      <p class="text-sm">Looking for someone to work with on your next project? Head over to <link-primary href="https://sinovi.uk/contact">sinovi.uk/contact</link-primary> and we'll arrange a call to discuss your plans.</p>
+        <p class="text-sm">Looking for someone to work with on your next project? Head over to <link-primary href="https://sinovi.uk/contact">sinovi.uk/contact</link-primary> and we'll arrange a call to discuss your plans.</p>
     </div>
 
     <div class="mt-8 w-full rounded-2xl border border-zinc-100 p-6 ">
-      <h2 class="flex text-sm font-semibold text-zinc-500 uppercase ">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fill-zinc-100 w-6 h-6 stroke-zinc-400">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
-        </svg>
-        <span class="ml-3">Around the web</span>
-      </h2>
-      <ul role="list">
-        
-        <social-link rel="me" role="listitem" href="https://indieweb.social/@martinhicks" >
-          <icon-mastodon slot="icon" class="w-8 h-8"></icon-mastodon>
-          <span slot="content">Follow on Mastodon</span>
-        </social-link>
-        <social-link role="listitem" href="https://github.com/hicksy" >
-          <icon-github slot="icon" class="w-8 h-8"></icon-github>
-          <span slot="content">Follow on GitHub</span>
-        </social-link>
-        <social-link role="listitem" href="https://www.linkedin.com/in/martin-hicks-8061748/" >
-          <icon-linkedin slot="icon" class="w-8 h-8"></icon-linkedin>
-          <span slot="content">Follow on LinkedIn</span>
-        </social-link>
-        <social-link role="listitem" href="https://twitter.com/martinhicks">
-          <icon-twitter slot="icon" class="w-8 h-8"></icon-twitter>
-          <span slot="content">Follow on Twitter</span>
-        </social-link>
-      </ul>
+        <panel-header>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="fill-zinc-100 w-6 h-6 stroke-zinc-400">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+            </svg>
+            <span class="ml-3">Around the web</span>
+        </panel-header>
+        <ul role="list">
+
+            <social-link rel="me" role="listitem" href="https://indieweb.social/@martinhicks">
+                <icon-mastodon slot="icon" class="w-8 h-8"></icon-mastodon>
+                <span slot="content">Follow on Mastodon</span>
+            </social-link>
+            <social-link role="listitem" href="https://github.com/hicksy">
+                <icon-github slot="icon" class="w-8 h-8"></icon-github>
+                <span slot="content">Follow on GitHub</span>
+            </social-link>
+            <social-link role="listitem" href="https://www.linkedin.com/in/martin-hicks-8061748/">
+                <icon-linkedin slot="icon" class="w-8 h-8"></icon-linkedin>
+                <span slot="content">Follow on LinkedIn</span>
+            </social-link>
+            <social-link role="listitem" href="https://twitter.com/martinhicks">
+                <icon-twitter slot="icon" class="w-8 h-8"></icon-twitter>
+                <span slot="content">Follow on Twitter</span>
+            </social-link>
+        </ul>
     </div>
 
     <div class="mt-8 w-full rounded-2xl border border-zinc-100 p-6 ">
-      <h2 class="flex text-sm font-semibold text-zinc-500 uppercase">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
-          </svg>
-          
-          <span class="ml-3">Work history</span>
-        </h2>
-      <ol class="mt-6 space-y-4">
-          <li class="flex gap-4">
-              <div
-                  class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 ">
-                  <img alt="" src="/images/sinovi-logo.png" width="32" height="32" decoding="async" class="h-7 w-7 rounded-full" loading="lazy" style="color:transparent">
-              </div>
-              
-              <dl class="flex flex-auto flex-wrap gap-x-2">
-                  <dt class="sr-only">Company</dt>
-                  <dd class="flex-none text-sm font-medium text-zinc-900"><a href="https://sinovi.uk" class="underline">Si Novi</a></dd>
-                  <dt class="sr-only">Date</dt>
-                  <dd class="ml-auto text-xs text-zinc-500" aria-label="2018 until Present">
-                      <time datetime="2018">2018</time> <span aria-hidden="true">—</span> <time datetime="2022">Present</time>
-                  </dd>
-                  <dt class="sr-only">Role</dt>
-                  <dd class="w-full text-xs text-zinc-500">Co-founder</dd>
-                  
-              </dl>
-          </li>
-          <li class="flex gap-4">
-              <div
-                  class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 ">
-                  <img alt="" src="/images/human-logo.jpeg" width="32" height="32" decoding="async" class="h-7 w-7 rounded-full" loading="lazy" style="color:transparent">
-              </div>
-              
-              <dl class="flex flex-auto flex-wrap gap-x-2">
-                  <dt class="sr-only">Company</dt>
-                  <dd class="flex-none text-sm font-medium text-zinc-900">Tariff St. /  Human</dd>
-                  <dt class="sr-only">Date</dt>
-                  <dd class="ml-auto text-xs text-zinc-500" aria-label="2012 until 2018">
-                      <time datetime="2011">2011</time> <span aria-hidden="true">—</span> <time datetime="2018">2018</time>
-                  </dd>
-                  <dt class="sr-only">Role</dt>
-                  <dd class="w-full text-xs text-zinc-500">Director. Software development</dd>
-              </dl>
-          </li>
-          <li class="flex gap-4">
-              <div
-                  class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 ">
-                  <img alt="" src="/images/iconic-mobile-logo.png" width="22" height="14" decoding="async" class="h-[14px] w-[22px] rounded-full" loading="lazy" style="color:transparent">
-              </div>
-              
-              <dl class="flex flex-auto flex-wrap gap-x-2">
-                  <dt class="sr-only">Company</dt>
-                  <dd class="flex-none text-sm font-medium text-zinc-900">Iconic Mobile</dd>
-                  <dt class="sr-only">Date</dt>
-                  <dd class="ml-auto text-xs text-zinc-500" aria-label="2010 until 2012">
-                      <time datetime="2010">2010</time> <span aria-hidden="true">—</span> <time datetime="2014">2012</time>
-                  </dd>
-                  <dt class="sr-only">Role</dt>
-                  <dd class="w-full text-xs text-zinc-500">Director. Mobile app development</dd>
-              </dl>
-          </li>
+        <panel-header>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+            </svg>
 
-          <li class="flex gap-4">
-              <div
-                  class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 ">
-                  <img alt="" src="/images/mjh-logo.png" width="32" height="32" decoding="async" class="h-7 w-7 rounded-full" loading="lazy" style="color:transparent">
-              </div>
-              
-              <dl class="flex flex-auto flex-wrap gap-x-2">
-                  <dt class="sr-only">Company</dt>
-                  <dd class="flex-none text-sm font-medium text-zinc-900">Freelance</dd>
-                  <dt class="sr-only">Date</dt>
-                  <dd class="ml-auto text-xs text-zinc-500" aria-label="2008 until 2010">
-                      <time datetime="2008">2008</time> <span aria-hidden="true">—</span> <time datetime="2010">2010</time>
-                  </dd>
-                  <dt class="sr-only">Role</dt>
-                  <dd class="w-full text-xs text-zinc-500">Web & mobile developer</dd>
-                 
-              </dl>
-          </li>
+            <span class="ml-3">Work history</span>
+        </panel-header>
+        <ol class="mt-6 space-y-4">
+            <li class="flex gap-4">
+                <div
+                    class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 ">
+                    <img alt="sinovi logo" src="/images/sinovi-logo.png" width="32" height="32" decoding="async" class="h-7 w-7 rounded-full" loading="lazy" style="color:transparent">
+                </div>
 
-          <li class="flex gap-4">
-              <div
-                  class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 ">
-                  <img alt="" src="/images/via-logo.ico" width="32" height="32" decoding="async" class="h-7 w-7 rounded-full" loading="lazy" style="color:transparent">
-              </div>
-              
-              <dl class="flex flex-auto flex-wrap gap-x-2">
-                  <dt class="sr-only">Company</dt>
-                  <dd class="flex-none text-sm font-medium text-zinc-900">Via Studios </dd>
-                  <dt class="sr-only">Date</dt>
-                  <dd class="ml-auto text-xs text-zinc-500" aria-label="2005 until 2008">
-                      <time datetime="2005">2005</time> <span aria-hidden="true">—</span> <time datetime="2008">2008</time>
-                  </dd>
-                  <dt class="sr-only">Role</dt>
-                  <dd class="w-full text-xs text-zinc-500">Web developer</dd>
-                  
-              </dl>
-          </li>
-      </ol>
-      
-  </div>
+                <dl class="flex flex-auto flex-wrap gap-x-2">
+                    <dt class="sr-only">Company</dt>
+                    <dd class="flex-none text-sm font-medium text-zinc-900"><a href="https://sinovi.uk" class="underline">Si Novi</a></dd>
+                    <dt class="sr-only">Date</dt>
+                    <dd class="ml-auto text-xs text-zinc-500" aria-label="2018 until Present">
+                        <time datetime="2018">2018</time> <span aria-hidden="true">—</span> <time datetime="2022">Present</time>
+                    </dd>
+                    <dt class="sr-only">Role</dt>
+                    <dd class="w-full text-xs text-zinc-500">Co-founder</dd>
+
+                </dl>
+            </li>
+            <li class="flex gap-4">
+                <div
+                    class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 ">
+                    <img alt="human software logo" src="/images/human-logo.jpeg" width="32" height="32" decoding="async"
+                        class="h-7 w-7 rounded-full" loading="lazy" style="color:transparent">
+                </div>
+
+                <dl class="flex flex-auto flex-wrap gap-x-2">
+                    <dt class="sr-only">Company</dt>
+                    <dd class="flex-none text-sm font-medium text-zinc-900">Tariff St. / Human</dd>
+                    <dt class="sr-only">Date</dt>
+                    <dd class="ml-auto text-xs text-zinc-500" aria-label="2012 until 2018">
+                        <time datetime="2011">2011</time> <span aria-hidden="true">—</span> <time
+                            datetime="2018">2018</time>
+                    </dd>
+                    <dt class="sr-only">Role</dt>
+                    <dd class="w-full text-xs text-zinc-500">Director. Software development</dd>
+                </dl>
+            </li>
+            <li class="flex gap-4">
+                <div
+                    class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 ">
+                    <img alt="" src="/images/iconic-mobile-logo.png" width="22" height="14" decoding="async"
+                        class="h-[14px] w-[22px] rounded-full" loading="lazy" style="color:transparent">
+                </div>
+
+                <dl class="flex flex-auto flex-wrap gap-x-2">
+                    <dt class="sr-only">Company</dt>
+                    <dd class="flex-none text-sm font-medium text-zinc-900">Iconic Mobile</dd>
+                    <dt class="sr-only">Date</dt>
+                    <dd class="ml-auto text-xs text-zinc-500" aria-label="2010 until 2012">
+                        <time datetime="2010">2010</time> <span aria-hidden="true">—</span> <time datetime="2014">2012</time>
+                    </dd>
+                    <dt class="sr-only">Role</dt>
+                    <dd class="w-full text-xs text-zinc-500">Director. Mobile app development</dd>
+                </dl>
+            </li>
+
+            <li class="flex gap-4">
+                <div
+                    class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 ">
+                    <img alt="mjh logo - basic, the letters mjs" src="/images/mjh-logo.png" width="32" height="32" decoding="async" class="h-7 w-7 rounded-full" loading="lazy" style="color:transparent">
+                </div>
+
+                <dl class="flex flex-auto flex-wrap gap-x-2">
+                    <dt class="sr-only">Company</dt>
+                    <dd class="flex-none text-sm font-medium text-zinc-900">Freelance</dd>
+                    <dt class="sr-only">Date</dt>
+                    <dd class="ml-auto text-xs text-zinc-500" aria-label="2008 until 2010">
+                        <time datetime="2008">2008</time> <span aria-hidden="true">—</span> <time datetime="2010">2010</time>
+                    </dd>
+                    <dt class="sr-only">Role</dt>
+                    <dd class="w-full text-xs text-zinc-500">Web & mobile developer</dd>
+
+                </dl>
+            </li>
+
+            <li class="flex gap-4">
+                <div
+                    class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 ">
+                    <img alt="via studios logo" src="/images/via-logo.ico" width="32" height="32" decoding="async" class="h-7 w-7 rounded-full" loading="lazy" style="color:transparent">
+                </div>
+
+                <dl class="flex flex-auto flex-wrap gap-x-2">
+                    <dt class="sr-only">Company</dt>
+                    <dd class="flex-none text-sm font-medium text-zinc-900">Via Studios </dd>
+                    <dt class="sr-only">Date</dt>
+                    <dd class="ml-auto text-xs text-zinc-500" aria-label="2005 until 2008">
+                        <time datetime="2005">2005</time> <span aria-hidden="true">—</span> <time datetime="2008">2008</time>
+                    </dd>
+                    <dt class="sr-only">Role</dt>
+                    <dd class="w-full text-xs text-zinc-500">Web developer</dd>
+
+                </dl>
+            </li>
+        </ol>
+
+    </div>

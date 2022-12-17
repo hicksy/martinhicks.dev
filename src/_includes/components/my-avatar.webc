@@ -1,0 +1,4 @@
+<picture>
+    <source srcset="/images/5F8AB69C-FA08-4C25-B932-74D76EBB7721.webp" type="image/webp">
+    <img src="/images/5F8AB69C-FA08-4C25-B932-74D76EBB7721.jpg" alt="Me and my wife, Helen, lying on the grass in summer. " :width="this.width" :height="this.height" class="max-w-[100px] md:max-w-[200px] mx-auto aspect-square ring-2 ring-zinc-500/40 rotate-45 rounded-full bg-zinc-100 object-cover"/>
+</picture> 

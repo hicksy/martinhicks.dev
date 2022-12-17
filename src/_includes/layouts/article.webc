@@ -8,37 +8,23 @@ jsonld: article
       return /*html*/`
       <container >
         <div class="flex flex-col max-w-2xl mx-auto justify-center ">
-
-          <div class="mt-4">
-            
-            <article>
-              <header class="flex flex-col">
-                <picture class="flex w-full " >
-                    <source srcset="${this.image.webp}" type="image/webp">
-                    <img class="w-full full-width mb-2 object-cover" src="${this.image.path}" width="345" height="236" alt="${this.image.alt}">
-                </picture> 
-                <time :date-time="date" class="flex items-center text-base text-zinc-500 mt-6 ">
-                  <span class="h-4 w-0.5 rounded-full bg-zinc-200"></span>
-                  <span class="ml-3">${this.date}</span>
-                </time>
-                <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">${this.title}</h1>
-              </header>
-              <article-prose class="mt-8">${this.content}</article-prose>
-            </article>
-          </div>
-
+          <article class="mt-4">
+            <header class="flex flex-col">
+              <picture class="flex w-full " >
+                  <source srcset="${this.image.webp}" type="image/webp">
+                  <img class="w-full full-width mb-2 object-cover" src="${this.image.path}" width="345" height="236" alt="${this.image.alt}">
+              </picture> 
+              <time date-time="date" class="text-sm text-zinc-500 mt-6 mb-1 ">
+                ${this.date}
+              </time>
+              <h1 class="font-bold text-zinc-800 text-4xl sm:text-6xl">${this.title}</h1>
+            </header>
+            <article-prose class="mt-6">${this.content}</article-prose>
+          </article>
           
         </div>
 
-        <div class="my-4">
-
-          <picture >
-            <source srcset="/images/5F8AB69C-FA08-4C25-B932-74D76EBB7721.webp" type="image/webp">
-            <img loading="lazy" src="/images/5F8AB69C-FA08-4C25-B932-74D76EBB7721.jpg" alt="Me and my wife, Helen, lying on the grass in summer. " width="100" height="100" class="max-w-[100px] md:max-w-[200px] mx-auto aspect-square ring-2 ring-zinc-500/40 rotate-45 rounded-full bg-zinc-100 object-cover"/>
-          </picture> 
-
-          <my-details></my-details>
-        </div>
+        <my-details mode="full"></my-details>
       </container>
       `
   }
