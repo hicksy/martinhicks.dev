@@ -1,0 +1,68 @@
+name: Build & Deploy Eleventy
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install Global Dependencies
+        run: |
+          npm -g install @deptagency/octopus
+
+      - name: Install dependencies & build
+        run: |
+          npm ci
+          npm run build          
+          
+      - name: Configure AWS credentials from AWS account
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{secrets.AWS_ROLE}}
+          aws-region: eu-west-2
+          role-duration-seconds: 900
+          role-session-name: GitHub-Deploy
+
+      - name: Copy files to the live website with the AWS CLI
+        run: |
+          aws s3 sync ./_site s3://martinhicks.net --cache-control max-age=31536000 --delete --acl=public-read --follow-symlinks
+
+      - name: Invalidate CloudFront
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{secrets.CLOUDFRONT_DISTRIBUTION_ID}} --paths "/*"
+      - name: Check for broken links
+        run: |
+          octopus http://martinhicks.net.s3-website.eu-west-2.amazonaws.com --ignore-external --include-images --slack-webhook ${{secrets.SLACK_WEBHOOK_URL}}
+
+      - name: Audit URLs using Lighthouse
+        id: LightHouseAction
+        uses: treosh/lighthouse-ci-action@v9
+        with:
+          urls: |
+            https://martinhicks.net
+          uploadArtifacts: false # save results as an action artifacts
+          configPath: ./lighthouserc.json 
+      - name: Lighthouse Webhook
+        uses: slackapi/slack-github-action@v1.23.0
+        with:
+          # This data can be any valid JSON from a previous step in the GitHub Action
+          payload: |
+            {
+              "url": "martinhicks.net",
+              "performance": "${{fromJson(steps.LightHouseAction.outputs.manifest)[2].summary.performance}}",
+              "best-practices": "${{fromJson(steps.LightHouseAction.outputs.manifest)[2].summary['best-practices']}}",
+              "seo": "${{fromJson(steps.LightHouseAction.outputs.manifest)[2].summary.seo}}",
+              "accessibility": "${{fromJson(steps.LightHouseAction.outputs.manifest)[2].summary.accessibility}}"
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_LIGHTHOUSE_WEBHOOK_URL }}
+      - name: Debug
+        run: |
+          echo ${{steps.LightHouseAction.outputs.manifest}}

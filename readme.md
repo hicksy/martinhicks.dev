@@ -3,11 +3,15 @@
 ## Tech 
 
 - Eleventy (using webc)
-- Github action to deploy
 - S3 hosted website
 - Cloudfront
 - Lamda@Edge 
 - CloudFront Functions 
+- Github action to deploy
+    - publish to S3
+    - check for broken links
+    - invalidate cloudfront cache
+    - run lighthouse scan
 
 ## Dev
 
