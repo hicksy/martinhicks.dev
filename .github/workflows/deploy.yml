@@ -33,7 +33,7 @@ jobs:
       - name: Copy files to the live website with the AWS CLI
         run: |
           aws s3 sync ./_site s3://martinhicks.net --cache-control 'max-age=31536000' --delete --acl=public-read --follow-symlinks --exclude *.html --exclude *.xml --exclude *.txt --exclude *.webmanifest --exclude favicon.ico
-          aws s3 sync ./_site s3://martinhicks.net --cache-control 'no-cache' --acl=public-read --follow-symlinks --exclude * --include *.html --include *.xml --include *.txt --include *.webmanifest --include favicon.ico
+          aws s3 sync ./_site s3://martinhicks.net --cache-control 'no-cache' --delete --acl=public-read --follow-symlinks --exclude * --include *.html --include *.xml --include *.txt --include *.webmanifest --include favicon.ico
       - name: Invalidate CloudFront
         run: |
           aws cloudfront create-invalidation --distribution-id ${{secrets.CLOUDFRONT_DISTRIBUTION_ID}} --paths "/*"
