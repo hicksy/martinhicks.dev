@@ -17,11 +17,11 @@
         </div>
         <hr class="block w-1/2 mx-auto lg:hidden my-8">
     </div>
-    <div class="full-width flex flex-col mx-auto justify-center mt-4 rounded-2xl border md:border-zinc-100 md:p-8 ">
+    <div class="full-width flex flex-col mx-auto justify-center rounded-2xl md:mt-4 md:border md:border-zinc-100 md:p-8 ">
         
         <panel-header class="pl-2 md:pl-0">Latest posts</panel-header>
        
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 auto-cols-auto md:auto-rows-[1fr] mb-8 p-8 md:p-0">
+        <div class="grid grid-cols-1 md:gap-8 md:grid-cols-2 auto-cols-auto md:auto-rows-[1fr] mb-8 px-8 md:p-0">
         <script webc:type="render" webc:is="template">
                 function () {
                     //console.log(this.pagination)
