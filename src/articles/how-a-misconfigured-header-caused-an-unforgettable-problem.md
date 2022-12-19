@@ -42,7 +42,7 @@ As you can see I use a number of CLI params:
 
 Here I inform S3 to set the Cache-Control header - a header S3 will include when returning a request for each individual web asset - a html page, a css file, an image, a sitemap.xml... i.e. everything I've just synced. 
 
-In haste I inadvertently set the `max-age` value to `31536000` - that's ONE YEAR - and I told S3 to do so for all my assets. Therefore for every request, S3 will return the header `cache-control: max-age=31536000`), which tells your web browser that it's allowed to cache the contents of the page you requested *_for up to one year._*  
+In haste I inadvertently set the `max-age` value to `31536000` - that's ONE YEAR - and I told S3 to do so for all my assets. Therefore for every request, S3 will return the header `cache-control: max-age=31536000`, which tells your web browser that it's allowed to cache the contents of the page you requested *_for up to one year._*  
 
 ## Why is this a problem - caching is good right?
 
