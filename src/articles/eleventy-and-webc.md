@@ -7,12 +7,11 @@ image:
   webp: /images/articles/eleventy-webc.webp
   alt: Eleventy and WebC text only logos on a black background
 ---
-
 I recently rebuilt this website and my company website - [sinovi.uk](sinovi.uk) - using [Eleventy](https://www.11ty.dev/) 2.0 and their new [WebC](https://www.11ty.dev/docs/languages/webc/) language for templating.
 
 It's really good. And well worth checking out. 
 
-In this post I look at my experiences trying out Eleventy 2.0 and its new Web Component language, webc.
+In this post I look at my experiences trying out Eleventy 2.0 and its new Web Component language, WebC.
 
 _**Note**_
 
@@ -24,7 +23,7 @@ It’s just hit version [canary-20](https://www.npmjs.com/package/@11ty/eleventy
 
 I’d heard of the Eleventy project in passing via newsletters and Twitter posts for several years, but up until a few months ago I hadn’t tried to build anything with it.
 
-I think I’d mentally stored it away as similar in vain to gatsby  or some similar react tool - _...there's a lot of those, right?_ 
+I think I’d mentally stored it away as similar in vain to Gatsby  or some similar react tool - _...there's a lot of those, right?_ 
 
 How wrong was I?
 
@@ -53,7 +52,7 @@ What I do know _(now)_ is that 11ty absolutely nails static site generation.
 
 They have multiple [templating languages](https://www.11ty.dev/docs/languages/), [nested layouts](https://www.11ty.dev/docs/layout-chaining/), a [sensible config](https://www.11ty.dev/docs/config/) and [plugin system](https://www.11ty.dev/docs/plugins/), and a really cool [data cascade](https://www.11ty.dev/docs/data-cascade/) which provides lots of options for populating a page’s templating data or mutating a particular value prior to generating the page.
 
-The docs site is _veeeeerrrry_ comprehensive. To be honest… so big I found it overwhelming to begin with _(it really melted my head for a bit)_, but it's a fantastastic resource and a credit to the community of contributors. 
+The docs site is _veeeeerrrry_ comprehensive. To be honest… so big I found it overwhelming to begin with _(it really melted my head for a bit)_, but it's a fantastic resource and a credit to the community of contributors. 
 
 ## My first look
 
@@ -293,7 +292,7 @@ Which is usable like:
 </social-link>
 ```
 
-_nb icon-mastodon is another webc component - complety nestable as you'd expect_
+_nb icon-mastodon is another webc component - completely nest-able as you'd expect_
 
 
 
@@ -335,9 +334,9 @@ I’ve had to build a few production builds locally at times just to make sure m
 
 3. **Plug-ins have a whole bunch of new hooks**
 
-This is a big upgrade and I think will make intergrating other tools way easier. 
+This is a big upgrade and I think will make integrating other tools way easier. 
 
-I think it's backwards compatable. I’m looking forward to playing around with this more. 
+I think it's backwards compatible. I’m looking forward to playing around with this more. 
 
 4. **WebC components aren’t automatically discoverable within a project by default.**
 
