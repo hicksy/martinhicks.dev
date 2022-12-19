@@ -11,7 +11,7 @@ _**tldr**: If you visited my site between 2022-12-01 and 2022-12-18 you might no
 
 ---
 
-A couple of weeks or so ago, enthused by my move to [Mastodon](https://indieweb.social/@martinhicks), the growing desire of owning your own content post-Musk, and a upcoming New Year's resolution I'd made with myself to be "less mute" on the internet in 2023 - I decided to re-publish my website and start sharing my thoughts in longer form writing. 
+A couple of weeks or so ago, enthused by my move to [Mastodon](https://indieweb.social/@martinhicks), the growing desire of owning your own content post-Musk, and an upcoming New Year's resolution I'd made with myself to be "less mute" on the internet in 2023 - I decided to re-publish my website and start sharing my thoughts in longer form writing. 
 
 Over the weekend _(hungover, after some pre-Christmas drinks the night before)_ I realised I'd made a BIG mistake with the website deployment mechanism - accidentally setting a long-term `cache-control` header for all resources, not just the immutable ones 🤦🏻‍♂️. 
 
