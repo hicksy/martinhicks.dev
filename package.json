@@ -28,6 +28,7 @@
     "@tailwindcss/typography": "^0.5.8",
     "dayjs": "^1.11.6",
     "imagemin": "^8.0.1",
+    "markdown-it-attrs": "^4.1.6",
     "tailwind-merge": "^1.6.2"
   },
   "eslintConfig": {

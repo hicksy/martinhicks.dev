@@ -2,6 +2,8 @@ const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const dayjs = require("dayjs");
 const { twMerge } = require('tailwind-merge')
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const markdownIt = require("markdown-it");
+const markdownItAttrs = require("markdown-it-attrs");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -16,7 +18,8 @@ module.exports = function (eleventyConfig) {
     "src/robots.txt": "robots.txt"
   });
 
-
+  const markdownLib = markdownIt().use(markdownItAttrs);
+  eleventyConfig.setLibrary("md", markdownLib);
 
   eleventyConfig.addFilter("tailwindMerge", function(defaultClasses, overrideClasses) { 
     return twMerge(defaultClasses, overrideClasses)
