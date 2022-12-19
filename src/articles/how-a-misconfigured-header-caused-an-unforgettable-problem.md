@@ -118,7 +118,7 @@ It feels like I shouldn't apply this header on every new page I publish from thi
 
 What I really wish is that there was a more deterministic header I could apply, say something like:
 
-`Clear-Site-Data:  'cache' '2022-12-01:2022-12-19'`
+`Clear-Site-Data:  'cache' '2022-12-01:2022-12-18'`
 
 Wouldn't it be handy to be able to say "clear this site cache if the item was stored between the following dates"? 
 
