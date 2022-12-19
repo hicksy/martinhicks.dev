@@ -106,7 +106,7 @@ After studying MDN I found the `Clear-Site-Data` header, which is exactly what I
 
 Great. So this article is being served with the following header. 
 
-`Clear-Site-Data: "cache"`. 
+`Clear-Site-Data: "cache"`. Which I've acheived by creating a response headers policy on CloudFront that includes this header in the response for this specific path. 
 
 Which I sincerely hope means your browser has now been [zapped by a Neuralyzer](https://meninblack.fandom.com/wiki/Neuralyzer) and forgotten any cached data it stored. *(If it hasn't, maybe you could humour me by giving the [homepage](https://martinhicks.net){target="_blank" class="external"} and [journal](https://martinhicks.net/articles){target="_blank" class="external"} page a refresh?)*
 
