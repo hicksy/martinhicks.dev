@@ -54,7 +54,7 @@
             </div>
             <site-footer></site-footer>
 
-            <script type="module" defer webc:if="this.page.url === '/articles/how-a-misconfigured-header-caused-an-unforgettable-problem'" webc:keep >
+            <script type="module" webc:if="this.page.url === '/articles/how-a-misconfigured-header-caused-an-unforgettable-problem'" webc:keep >
   
 /*
     why am I doing this? 
