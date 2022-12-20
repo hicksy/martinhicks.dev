@@ -180,7 +180,7 @@ Anyway, for now.. I've added the following script to this page, and this page on
 </script>
 ```
 
-There we go. Still hoping this article can catch any of the early readers of my site. But also hopeful that if you're reading this way in the future, and you've made a imilar mistake, you might have more options at your disposal - lucky you. 
+There we go. Still hoping this article can catch any of the early readers of my site. But also hopeful that if you're reading this way in the future, and you've made a similar mistake, you might have more options at your disposal - lucky you. 
 
 Thanks again Jake and Alex - really appreciated.
 
