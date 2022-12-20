@@ -64,16 +64,18 @@
     This function will re-request those documents, and ask your browser to re-populate it's local cache storing the new HTML document(s). 
     
     I only run this JS on the article page - https://martinhicks.net/articles/how-a-misconfigured-header-caused-an-unforgettable-problem. 
+
+    n.b. i'm not awaiting teh function, so the response of the main page isn't delayed
 */
 
-async function clearRogueCache(url) {
-    return await fetch(url, {
+function clearRogueCache(url) {
+    return fetch(url, {
         "cache": "reload"
     });
 }
 
-await clearRogueCache("https://martinhicks.net");
-await clearRogueCache("https://martinhicks.net/articles");
+clearRogueCache("https://martinhicks.net");
+clearRogueCache("https://martinhicks.net/articles");
             
             </script>
         </div>
