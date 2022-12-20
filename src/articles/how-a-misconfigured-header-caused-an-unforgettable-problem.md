@@ -168,14 +168,14 @@ Anyway, for now.. I've added the following script to this page, and this page on
 ```
 <script type="module">
   
-    function clearRogueCache(url) {
-        return fetch(url, {
-            "cache": "reload"
-        });
-    }
+  async function clearRogueCache(url) {
+      return await fetch(url, {
+          "cache": "reload"
+      });
+  }
 
-    clearRogueCache("https://martinhicks.net");
-    clearRogueCache("https://martinhicks.net/articles");
+  await clearRogueCache("https://martinhicks.net");
+  await clearRogueCache("https://martinhicks.net/articles");
 
 </script>
 ```
