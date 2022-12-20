@@ -46,13 +46,36 @@
             <main @html="content" ></main>
             
             <script  src="https://the-claw-webring-widget.netlify.app/the-claw-webring-widget.mjs" type="module" webc:keep></script>
-
+            
             <div class="mt-6 px-4">
-            <the-claw-webring-widget theme="light" webc:raw >
-            <!-- TO DO ADD FALLBACK CONTENT -->
-            </the-claw-webring-widget>
-        </div>
+                <the-claw-webring-widget theme="light" webc:raw >
+                <!-- TO DO ADD FALLBACK CONTENT -->
+                </the-claw-webring-widget>
+            </div>
             <site-footer></site-footer>
+
+            <script type="module" defer webc:if="this.page.url === '/articles/how-a-misconfigured-header-caused-an-unforgettable-problem'" webc:keep >
+  
+/*
+    why am I doing this? 
+    
+    I accidently served some HTML with a long-lived cache-control header
+    
+    This function will re-request those documents, and ask your browser to re-populate it's local cache storing the new HTML document(s). 
+    
+    I only run this JS on the article page - https://martinhicks.net/articles/how-a-misconfigured-header-caused-an-unforgettable-problem. 
+*/
+
+async function clearRogueCache(url) {
+    return await fetch(url, {
+        "cache": "reload"
+    });
+}
+
+await clearRogueCache("https://martinhicks.net");
+await clearRogueCache("https://martinhicks.net/articles");
+            
+            </script>
         </div>
     </body>
 </html>

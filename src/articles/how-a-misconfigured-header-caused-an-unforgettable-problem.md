@@ -7,7 +7,12 @@ image:
   webp: /images/articles/men-in-black-neuralyzer.webp
   alt: The Neuralyzer in Men in Black
 ---
+
 _**tldr**: If you visited my site between 2022-12-01 and 2022-12-18 you might not be seeing updated content on previously accessed pages. I've added a `Clear-Site-Data` header to this page to possibly rectify. If you don't see multiple blogs posts on the homepage after viewing this article, please manually refresh any page you previously visited - thank you_ 🙏
+
+_**edit: 2022-12-20** - Following a [brief discussion with Jake Archibold](https://indieweb.social/@martinhicks/109542056075959267) he offered the suggestion to use a fetch request with the `cache: 'reload'` property._
+_The nice thing about this is that it's cross-browser, so even Safari on both Desktop and iOS should re-validate their local cache using this technique._
+_It's still not something you'd want to put on every request - [I've added an update below that describes this](#update-20th-dec-2022)._
 
 ---
 
@@ -108,7 +113,9 @@ Great. So this article is being served with the following header.
 
 `Clear-Site-Data: "cache"`. Which I've acheived by creating a response headers policy on CloudFront that includes this header in the response for this specific path. 
 
-Which I sincerely hope means your browser has now been [zapped by a Neuralyzer](https://meninblack.fandom.com/wiki/Neuralyzer) and forgotten any cached data it stored. *(If it hasn't, maybe you could humour me by giving the [homepage](https://martinhicks.net){target="_blank" class="external"} and [journal](https://martinhicks.net/articles){target="_blank" class="external"} page a refresh?)*
+Which I sincerely hope means your browser has now been [zapped by a Neuralyzer](https://meninblack.fandom.com/wiki/Neuralyzer) and forgotten any cached data it stored. It's good for all browsers except for Safari (desktop and iOS), and Firefox (although that's behind a feature flag, so hopefully wider roll-out will be in an iminent version). 
+
+~*(If you're on iOS, maybe you could humour me by giving the [homepage](https://martinhicks.net){target="_blank" class="external"} and [journal](https://martinhicks.net/articles){target="_blank" class="external"} page a refresh?)*~
 
 ## Is there a better solution?
 
@@ -131,6 +138,50 @@ To be honest, I'm probably over analysing the problem. There's been very little 
 I'd be keen to hear from anyone who has any better ideas. Is there a more appropriate solution I could apply?
 
 You can contact me at [https://indieweb.social/@martinhicks](https://indieweb.social/@martinhicks)
+
+___
+
+## Update: 20th Dec 2022: {#update-20th-dec-2022}
+
+I outlined my issue on the [Fediverse](https://indieweb.social/@martinhicks/109542056075959267) - and tagged in [Jake Archibald](https://indieweb.social/@jaffathecake@mastodon.social) and [Alex Russell](https://indieweb.social/@slightlyoff@toot.cafe) to see if they had any ideas - I wasn't expecting a response tbh, so was blown away that they took time out to offer their thoughts. 
+
+Alex rightly pointed out that Apple lagging behind on this spec _(and many more, let's be clear)_, and the general issues holding up improving the web, are largely down to the lack of browser competition on iOS - something the [Open Web Advocacy (OWA)](https://open-web-advocacy.org/) group are looking to change. I completely agree and support this cause, and I'm going to reach out on [OWA's Discord](https://discord.gg/x53hkqrRKx) to see how I go about helping. If you care about the web, then why don't you too?
+
+Jake offered the following suggestion - `fetch(brokenUrl, { cache: 'reload' })`
+
+I tested this out on a random test URL and set the long `max-time` on its `cache-control` response header. I then hit a second page (after changing the initial test page's `cache-control` to `no-cache`), which included the suggested fetch call to the now stuck test page. 
+
+After hitting the page with this fetch command, the rogue stuck resource was re-requested by Safari, and when I returned to the original long-cached page it had it's new `cache-control: no-cache` applied.  
+
+It's perfect for what I need - a cross-browser solution, albeit with an additional couple of network requests as you need to specify individual stuck resources - there's no site-wide mechanism like with `clear-site-data`. But these quick tests proved that you can clear the cache of a previously visited page, from a second independent page (on the same domain).
+
+This technique uses the [Request.cache api](https://developer.mozilla.org/en-US/docs/Web/API/Request/cache) to tell the browser to re-request the URL specified without using any existing local cache. And to re-populate its cache based on the rules of the new `cache-contol` header. 
+
+Like with `clear-site-data` you wouldn't want to apply this to all your pages, but if you can get your returning-vistors to view some new content* it's a great solution.  
+
+_* perhaps a special article such as this, or if you've built a web-app you could email users who you know had accessed your service between a specific date period, and send them to a brand new landing page to peform the cleanse._
+
+There's also an experimental spec proposal `only-if-cached` on this API too. Meaning in the future, we could get even more specific and only perform the cache reload if the problematic stuck resource is a) in cache for this specific visitor, and b) has a date earlier than the incident. 
+
+Anyway, for now.. I've added the following script to this page, and this page only:
+
+```
+<script type="module">
   
+    async function clearRogueCache(url) {
+        return await fetch(url, {
+            "cache": "reload"
+        });
+    }
+
+    await clearRogueCache("https://martinhicks.net");
+    await clearRogueCache("https://martinhicks.net/articles");
+
+</script>
+```
+
+There we go. Still hoping this article can catch any of the early readers of my site. But also hopeful that if you're reading this way in the future, you might have more options at your disposal - lucky you. 
+
+Thanks again Jake and Alex - really appreciated.
 
 ___
