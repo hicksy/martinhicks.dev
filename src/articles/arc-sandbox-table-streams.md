@@ -133,7 +133,7 @@ __5. Configure Arc to use DynamoDB Local__
 #### Arc environment params
 Arc makes it really easy to switch out Dynalite for DynamoDB Local. 
 
-There's a couple of env vars you need to set to get your going. 
+There's a couple of env vars you need to set to get you going. 
 
 1. Tell arc that you're using an external db
 2. Change the port used for tables within arc
@@ -196,9 +196,9 @@ await table.createTable({
 });
 ```
 
-You can also do this using the standard JS dynamodb client for any projects that aren't using an additional toll like onetable. 
+You can also do this using the standard JS dynamodb client for any projects that aren't using an additional tool like onetable. 
 
-_tip: use architect-functions to infer the full name for your DynamoDB table's, which will be a combination of the name you've given and it's deployement envuronemnt etc_
+_tip: use [@architect/functions](https://www.npmjs.com/package/@architect/functions) to infer the full name for your DynamoDB table's, which will be a combination of the name you've given and it's deployement envuronemnt etc_
 
 
 __6. Modify the polling interval [optional]__
