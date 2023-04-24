@@ -198,7 +198,7 @@ await table.createTable({
 
 You can also do this using the standard JS dynamodb client for any projects that aren't using an additional tool like onetable. 
 
-_tip: use [@architect/functions](https://www.npmjs.com/package/@architect/functions) to infer the full name for your DynamoDB table's, which will be a combination of the name you've given and it's deployement envuronemnt etc_
+_tip: use [@architect/functions](https://www.npmjs.com/package/@architect/functions) to infer the full name for your DynamoDB table's, which will be a combination of the name you've given and it's deployement environment etc_
 
 
 __6. Modify the polling interval [optional]__
