@@ -31,7 +31,7 @@ I'd need to do a few things:
 
 ## Using the plugin
 
-The plugin kicks in when a `@tables-streams` pragma is discovered within your arc config, and queries the table meta data, stream meta data to retrieve iterators for each shard of the table's stream. 
+The plugin kicks in when a `@tables-streams` pragma is discovered within your arc config, and queries the table meta data / stream meta data to retrieve iterators for each shard of the table's stream. 
 
 If data is found the plugin invokes the corresponding lambda function using arc's inbuilt invoke function. 
 
@@ -122,7 +122,7 @@ There are various ways to use DyanmoDB Local. I opted for the bundled version th
 
 Just note that if you use the NoSQL Workbench version there's the following caveats I came accross:
 
-- Data storage is persistent in the NoSQL Workbench version - I can't find a way to set the `inMemory` flag available to the standalone / docker version (you'll need to modify an seed scripts to conditionally insert or drop and re-create the table)
+- Data storage is persistent in the NoSQL Workbench version - I can't find a way to set the `inMemory` flag available to the standalone / docker version (you'll need to modify any seed scripts to conditionally insert or drop and re-create the table)
 - You need to be running NoSQL Workbench while you develop and remember to toggle on DynamoDB Local each time (not a biggie really, but it'd be great to have the means to set it to autostart or run as a start-up background task)
 - The NoSQL Workbench version runs on port 5500, I can't see a way to change this, but it's not a problem for me. 
 
