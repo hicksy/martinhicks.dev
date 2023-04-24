@@ -47,10 +47,8 @@
             
             <script  src="https://the-claw-webring-widget.netlify.app/the-claw-webring-widget.mjs" type="module" webc:keep></script>
             
-            <div class="mt-6 px-4">
-                <the-claw-webring-widget theme="light" webc:raw >
-                <!-- TO DO ADD FALLBACK CONTENT -->
-                </the-claw-webring-widget>
+            <div class="mt-6 px-4 mx-auto">
+                <the-claw-webring-widget theme="light" webc:raw ></the-claw-webring-widget>
             </div>
             <site-footer></site-footer>
 
