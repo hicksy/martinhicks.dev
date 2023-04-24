@@ -6,7 +6,7 @@
     },
     "pagination": {
         "data": "collections.articles",
-        "size": 10,
+        "size": 4,
         "alias": "articles",
         "reverse": true
     }
