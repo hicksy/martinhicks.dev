@@ -26,14 +26,15 @@
     {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
     <item>
       <title>{{ post.data.title }}</title>
+      <content type="html">
+       {{ post.templateContent }}
+      </content>
       <link>{{ absolutePostUrl }}</link>
       <description>{{ post.data.description | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
       <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
       <dc:creator>{{ metadata.author.name }}</dc:creator>
       <guid>{{ absolutePostUrl }}</guid>
-      <content type="html">
-       {{ post.templateContent }}
-    </content>
+      
     </item>
     {%- endfor %}
   </channel>
