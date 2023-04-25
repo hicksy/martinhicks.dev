@@ -1,8 +1,4 @@
-<div webc:if="this.mode === 'full'" class="mt-8 mb-2">
 
-    <my-avatar width="100" height="100"></my-avatar>
-
-</div>
 
 <div class="w-full flex flex-col lg:flex-row lg:gap-6 text-zinc-800">
 
