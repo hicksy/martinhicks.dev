@@ -31,6 +31,9 @@
       <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
       <dc:creator>{{ metadata.author.name }}</dc:creator>
       <guid>{{ absolutePostUrl }}</guid>
+      <content type="html">
+       {{ post.templateContent }}
+    </content>
     </item>
     {%- endfor %}
   </channel>
