@@ -24,18 +24,18 @@
     <language>{{ metadata.language }}</language>
     {%- for post in collections.articles | reverse %}
     {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
-    <item>
+    <entry>
       <title>{{ post.data.title }}</title>
       <content type="html">
        {{ post.templateContent }}
       </content>
       <link>{{ absolutePostUrl }}</link>
-      {# <description>{{ post.data.description | htmlToAbsoluteUrls(absolutePostUrl) }}</description> #}
+      <summary>{{ post.data.description | htmlToAbsoluteUrls(absolutePostUrl) }}</summary>
       <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
       <dc:creator>{{ metadata.author.name }}</dc:creator>
       <guid>{{ absolutePostUrl }}</guid>
       
-    </item>
+    </entry>
     {%- endfor %}
   </channel>
 </rss>
