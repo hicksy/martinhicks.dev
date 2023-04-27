@@ -32,21 +32,21 @@ jobs:
 
       - name: Copy files to the live website with the AWS CLI
         run: |
-          aws s3 sync ./_site s3://martinhicks.net --cache-control 'max-age=31536000' --delete --acl=public-read --follow-symlinks --exclude '*' --include 'images/*' --include 'css/*'
-          aws s3 sync ./_site s3://martinhicks.net --cache-control 'no-cache' --delete --acl=public-read --follow-symlinks --exclude 'images/*' --exclude 'css/*'
+          aws s3 sync ./_site s3://martinhicks.dev --cache-control 'max-age=31536000' --delete --acl=public-read --follow-symlinks --exclude '*' --include 'images/*' --include 'css/*'
+          aws s3 sync ./_site s3://martinhicks.dev --cache-control 'no-cache' --delete --acl=public-read --follow-symlinks --exclude 'images/*' --exclude 'css/*'
       - name: Invalidate CloudFront
         run: |
           aws cloudfront create-invalidation --distribution-id ${{secrets.CLOUDFRONT_DISTRIBUTION_ID}} --paths "/*"
       - name: Check for broken links
         run: |
-          octopus http://martinhicks.net.s3-website.eu-west-2.amazonaws.com --ignore-external --include-images --slack-webhook ${{secrets.SLACK_WEBHOOK_URL}}
+          octopus http://martinhicks.dev.s3-website.eu-west-2.amazonaws.com --ignore-external --include-images --slack-webhook ${{secrets.SLACK_WEBHOOK_URL}}
 
       # - name: Audit URLs using Lighthouse
       #   id: LightHouseAction
       #   uses: treosh/lighthouse-ci-action@v9
       #   with:
       #     urls: |
-      #       https://martinhicks.net
+      #       https://martinhicks.dev
       #     uploadArtifacts: false # save results as an action artifacts
       #     configPath: ./lighthouserc.json 
       # - name: Lighthouse Webhook
@@ -55,7 +55,7 @@ jobs:
       #     # This data can be any valid JSON from a previous step in the GitHub Action
       #     payload: |
       #       {
-      #         "url": "martinhicks.net",
+      #         "url": "martinhicks.dev",
       #         "performance": "${{fromJson(steps.LightHouseAction.outputs.manifest)[2].summary.performance}}",
       #         "best-practices": "${{fromJson(steps.LightHouseAction.outputs.manifest)[2].summary['best-practices']}}",
       #         "seo": "${{fromJson(steps.LightHouseAction.outputs.manifest)[2].summary.seo}}",
