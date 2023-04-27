@@ -1,13 +1,13 @@
 {
     "@context": "http://schema.org",
-    "url": "https://martinhicks.net",
+    "url": "https://martinhicks.dev",
     "title": "Martin Hicks: Web app developer | AWS Certified | Manchester, UK",
     "me": {
         "@context": "http://schema.org",
         "@type": "Person",
         "@id": "martin-person",
         "name": "Martin Hicks",
-        "url": "https://martinhicks.net",
+        "url": "https://martinhicks.dev",
         "telephone": "07580017812",
         "sameAs": [
             "https://indieweb.social/@martinhicks",

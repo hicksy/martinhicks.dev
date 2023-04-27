@@ -80,7 +80,7 @@ Having first used 11ty with Enhance, I’d been drawn to Enhance’s use of Web 
 
 Maybe I gave up too soon in my earlier experiments? 
 
-But then I heard about Webc - I decided to persevere with my original plan, and set about re-building the [Si Novi](https://sinovi.uk) and [martinhicks.net](https://martinhicks.net) sites .
+But then I heard about Webc - I decided to persevere with my original plan, and set about re-building the [Si Novi](https://sinovi.uk) and [martinhicks.dev](https://martinhicks.dev) sites .
 
 ## Webc - now we’re rocking
 
@@ -128,7 +128,7 @@ eleventyExcludeFromCollections: true
     "title": "Martin Hicks - Journal",
     "subtitle": "Martin Hicks is a software developer from Manchester, UK",
     "language": "en",
-    "url": "https://martinhicks.net/",
+    "url": "https://martinhicks.dev/",
     "author": {
       "name": "Martin Hikcs",
       "email": "hello@martinhicks.net"
@@ -431,7 +431,7 @@ Absolutely great job.
 
 Keep an eye out for the next post in this series, which explains how to set up 11ty, AWS and GitHub actions to create a CI/CD build pipeline to deploy to S3. 
 
-You can view the [source code of my site here](https://github.com/hicksy/martinhicks.net).
+You can view the [source code of my site here](https://github.com/hicksy/martinhicks.dev).
 
 
 ---

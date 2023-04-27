@@ -45,7 +45,7 @@ module.exports = function (eleventyConfig) {
     let jsonLd = {
       "@context":"http://schema.org",
       "@type": "WebPage",
-      "@id": `https://martinhicks.net${obj.page.url}`,
+      "@id": `https://martinhicks.dev${obj.page.url}`,
       "name": obj.meta.title,
       "description": obj.meta.description,
       "publisher": {
