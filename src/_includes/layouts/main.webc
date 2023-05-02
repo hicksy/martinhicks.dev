@@ -18,6 +18,7 @@
         <meta name="keywords" content="AWS consultant, AWS, web developer, web dev, Serverless, AWS, nodejs, Web Components, JS, HTML, JavaScript" />
 	    <meta name="author" content="Martin Hicks" />
 
+        <link rel="canonical" :href="this.site.url + (this.page.url === '' ? '/' : this.page.url)" />
         <link rel="alternate" type="application/rss+xml" :href='site.rss.xml' />
         
         <link href="mailto:hello@martinhicks.net" rel="me">
