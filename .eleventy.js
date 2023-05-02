@@ -41,7 +41,7 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addFilter("webpageJsonLd", (obj) => {
-    console.log(obj)
+    //console.log(obj)
     let jsonLd = {
       "@context":"http://schema.org",
       "@type": "WebPage",
