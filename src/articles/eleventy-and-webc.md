@@ -7,7 +7,7 @@ image:
   webp: /images/articles/eleventy-webc.webp
   alt: Eleventy and WebC text only logos on a black background
 ---
-I recently rebuilt this website and my company website - [sinovi.uk](sinovi.uk) - using [Eleventy](https://www.11ty.dev/) 2.0 and their new [WebC](https://www.11ty.dev/docs/languages/webc/) language for templating.
+I recently rebuilt this website and my company website - [sinovi.uk](https://sinovi.uk) - using [Eleventy](https://www.11ty.dev/) 2.0 and their new [WebC](https://www.11ty.dev/docs/languages/webc/) language for templating.
 
 It's really good. And well worth checking out. 
 
