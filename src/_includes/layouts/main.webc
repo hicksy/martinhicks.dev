@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17690686-1" webc:keep></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z08ZZJ3XBL" webc:keep></script>
         <script webc:keep>
-        window.dataLayer = window.dataLayer || []; if (location.hostname !== 'martinhicks.dev'){window['ga-disable-UA-17690686-1'] = true;}
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-17690686-1');
+            window.dataLayer = window.dataLayer || []; if (location.hostname !== 'martinhicks.dev'){window['ga-disable-G-Z08ZZJ3XBL'] = true;}
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Z08ZZJ3XBL');
         </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
