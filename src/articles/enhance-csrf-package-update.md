@@ -34,7 +34,7 @@ Additionally, I've also improved the html generation for the component so you ca
 ```
 enctype
 target
-acceptCharset,
+acceptCharset
 autocomplete
 id
 novalidate
