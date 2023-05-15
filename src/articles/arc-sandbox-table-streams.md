@@ -6,7 +6,7 @@ image:
   path: /images/articles/862af880b5220e15.jpeg
   webp: /images/articles/862af880b5220e15.webp
   alt: Architect banner image
-
+  classoveride: "!mx-auto"
 ---
 
 ### Introduction

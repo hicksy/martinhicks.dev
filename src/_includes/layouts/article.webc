@@ -10,9 +10,9 @@ jsonld: article
         <div class="flex flex-col max-w-2xl mx-auto justify-center ">
           <article class="mt-4">
             <header class="flex flex-col">
-              <picture class="flex w-full " >
+              <picture class="flex w-full" >
                   <source srcset="${this.image.webp}" type="image/webp">
-                  <img class="w-full full-width mb-2 object-cover" src="${this.image.path}" width="345" height="236" alt="${this.image.alt}">
+                  <img class="w-full full-width mb-2 object-cover ${this.image.classoveride}" src="${this.image.path}" width="345" height="236" alt="${this.image.alt}">
               </picture> 
               <time date-time="date" class="text-sm text-zinc-500 mt-6 mb-1 ">
                 ${this.date}
