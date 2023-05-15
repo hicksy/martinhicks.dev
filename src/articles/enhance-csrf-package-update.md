@@ -6,7 +6,7 @@ image:
   path: /images/articles/npm-logo.png
   webp: /images/articles/npm-logo.webp
   alt: NPM package manager logo - red text, on a white background, reads - NPM
-  classoveride: "!mx-auto"
+  classoveride: "md:!mx-auto"
 
 ---
 
