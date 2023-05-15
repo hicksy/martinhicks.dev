@@ -71,6 +71,9 @@
 }
 
 
+section a {
+  word-wrap: break-word;
+}
 
 
 @import 'tailwindcss/utilities';
