@@ -37,6 +37,12 @@
 
         <script webc:keep type="application/ld+json" @html="dump(site.me)"></script>
         <script webc:keep type="application/ld+json" @html="webpageJsonLd(this)"></script>
+
+        <meta webc:if="this.page.url.startsWith('/articles/')" property="og:image" :content="this.site.url + this.image.path" />
+        <meta webc:if="this.page.url.startsWith('/articles/')" property="og:description" :content="this.description" />
+        <meta webc:if="this.page.url.startsWith('/articles/')" property="og:title" :content="this.title" />
+        <meta webc:if="this.page.url.startsWith('/articles/')" property="og:url" :content="this.site.url + this.page.url" />
+        <meta webc:if="this.page.url.startsWith('/articles/')" property="og:site_name" content="Martin Hicks" />
         
         <script webc:is="json-ld" ></script>
     </head>
