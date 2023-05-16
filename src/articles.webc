@@ -36,8 +36,8 @@ layout: layouts/main.webc
                     <div class="prose relative pb-8">
                             <a href="${article.data.url}">
                                 <picture class="flex w-full " >
-                                    <source srcset="${article.data.image.webp}" type="image/webp">
-                                    <img class=" full-width mb-2 ${article.data.image.classoveride}" src="${article.data.image.path}" width="345" height="236" alt="${article.data.image.alt}">
+                                    <source srcset="${article.data.image.webp}" type="image/webp" />
+                                    <img class="w-full full-width mb-2 ${article.data.image.classoveride}" src="${article.data.image.path}" width="345" height="236" alt="${article.data.image.alt}" />
                                 </picture> 
                             </a>
                             <span class="!text-sm">
