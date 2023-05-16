@@ -1,7 +1,7 @@
 ---
 title: "Remove trailing slash on 11ty S3 hosted sites using Cloudfront function"
 description: "How to rewrite the Cloudfront request so trailing slashes are redirected to the non-trailing slash URI using a Cloudfront function."
-date: 2023-05-15
+date: 2023-05-16
 image: 
   path: /images/articles/11ty-logo.png
   webp: /images/articles/11ty-logo.webp
