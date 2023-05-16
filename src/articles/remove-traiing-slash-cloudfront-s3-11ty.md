@@ -11,12 +11,12 @@ image:
 
 ### Intro
 
-This article will walk through the steps required to create a Cloudfront function to handle redirecting trailing slash URIs to non-trailing slash equivelants on your S3 hosted 11ty website.  
+This article will walk through the steps required to create a Cloudfront function to handle redirecting trailing slash URIs to non-trailing slash equivalents on your S3 hosted 11ty website.  
 
 ### Background 
 Several years ago we published our website at Si Novi using a hand-balled static site generator we built for ourselves, and deployed it to S3 with Cloudfront used for caching and routing our A record from Route 53. 
 
-For this old website we wanted to strip trailing slashes on URLs, so `https://example.com/articles/some-article` instead of `https://example.com/articles/some-article/`, peronsal preference I guess. 
+For this old website we wanted to strip trailing slashes on URLs, so `https://example.com/articles/some-article` instead of `https://example.com/articles/some-article/`, personal preference I guess. 
 
 Anyway, to achieve this [we used a Lamda@Edge function to handle the redirects](https://sinovi.uk/articles/static-website-url-optimisation-with-aws-serverless) for us - 301 redirecting from the trailing slash URI to the non-trailing slash URI - something we'd long achieved using `.htaccess` on an Apache server. 
 
@@ -24,7 +24,7 @@ We published this function to the [AWS Serverless Application Repository](https:
 
 Fast forward a few years, and we now publish our website using [Eleventy](https://11ty.dev) - still hosted on S3, still fronted with the Cloudfront CDN, but our long-standing redirect function no longer worked. 
 
-With 11ty we were hitting a redirect loop which we believe was due to it's use of subfolder index.html pages - our old hand-balled system created S3 objects like `articles/some-article.html` whereas Eleventy creates S3 objects like `articles/some-article/index.html`. The the old system resolved to the object correctly, whereas when using sub-directory within an `index.html` as 11ty and others do, this caused an infinte redirect loop.
+With 11ty we were hitting a redirect loop which we believe was due to it's use of subfolder index.html pages - our old hand-balled system created S3 objects like `articles/some-article.html` whereas Eleventy creates S3 objects like `articles/some-article/index.html`. The the old system resolved to the object correctly, whereas when using sub-directory within an `index.html` as 11ty and others do, this caused an infinite redirect loop.
 
 ### Solution
 
@@ -66,7 +66,7 @@ function handler(event) {
 }
 ```
 
-The above code achieves the same trailig slash removal as we had in our old Lambda@Edge function, but also includes an additional check to ensure that `index.html` is appended to any requests on their way to S3 (only if the request doesn't already include '.', so `image/some-image.png` will pass-through just fine ). 
+The above code achieves the same trailing slash removal as we had in our old Lambda@Edge function, but also includes an additional check to ensure that `index.html` is appended to any requests on their way to S3 (only if the request doesn't already include '.', so `image/some-image.png` will pass-through just fine ). 
 
 #### 2. Publish the function
 
