@@ -24,7 +24,7 @@ We published this function to the [AWS Serverless Application Repository](https:
 
 Fast forward a few years, and we now publish our website using [Eleventy](https://11ty.dev) - still hosted on S3, still fronted with the Cloudfront CDN, but our long-standing redirect function no longer worked. 
 
-With 11ty we were hitting a redirect loop which we believ was due to it's use of subfolder index.html pages - our old hand-balled system created S3 objects like `articles/some-article.html` whereas Eleventy creates objects like `articles/some-article/index.html`. The the old system resolved to the object correctly, whereas when using sub-directory within an `index.html` as 11ty and others do, this caused an infinte redirect loop.
+With 11ty we were hitting a redirect loop which we believe was due to it's use of subfolder index.html pages - our old hand-balled system created S3 objects like `articles/some-article.html` whereas Eleventy creates S3 objects like `articles/some-article/index.html`. The the old system resolved to the object correctly, whereas when using sub-directory within an `index.html` as 11ty and others do, this caused an infinte redirect loop.
 
 ### Solution
 
