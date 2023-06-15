@@ -13,7 +13,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" :href="bust('/css/style.css')" webc:keep>
         
-        <title @html="pageTitle(meta.title, site.title)"></title>
+        <title @html="pageTitle(meta.title, site.title, this.page.url)"></title>
         <meta name="description" :content="meta.description" />
         <meta name="keywords" content="AWS consultant, AWS, web developer, web dev, Serverless, AWS, nodejs, Web Components, JS, HTML, JavaScript" />
 	    <meta name="author" content="Martin Hicks" />

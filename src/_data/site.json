@@ -1,7 +1,7 @@
 {
     "@context": "http://schema.org",
     "url": "https://martinhicks.dev",
-    "title": "Martin Hicks: Web app developer | AWS Certified | Manchester, UK",
+    "title": "Martin Hicks - freelance developer and AWS consultant",
     "me": {
         "@context": "http://schema.org",
         "@type": "Person",

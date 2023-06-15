@@ -58,16 +58,20 @@ module.exports = function (eleventyConfig) {
 
   })
 
-  eleventyConfig.addFilter("pageTitle", (title, siteTitle) => {
-    if(title === siteTitle) {
+  eleventyConfig.addFilter("pageTitle", (title, siteTitle, url) => {
+    if(url === "/") {
       return title
-    }
+    } 
 
-    return `${title} | ${siteTitle}`
+    return `${title} - ${siteTitle}`
   })
 
   eleventyConfig.addUrlTransform(({url}) => {
-    return url.replace(/\/$/, '')
+    if(url !== "/") { 
+      return url.replace(/\/$/, '')
+    }
+
+    return url
   });
 
   return {
