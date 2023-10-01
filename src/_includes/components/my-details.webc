@@ -49,10 +49,10 @@
                 <icon-linkedin slot="icon" class="w-8 h-8"></icon-linkedin>
                 <span slot="content">LinkedIn</span>
             </social-link>
-            <!-- <social-link role="listitem" href="https://twitter.com/martinhicks">
+            <social-link role="listitem" href="https://twitter.com/martinhicks">
                 <icon-twitter slot="icon" class="w-8 h-8"></icon-twitter>
-                <span slot="content">Twitter</span>
-            </social-link> -->
+                <span slot="content"><span class="line-through">Twitter</span> X (rarely checked)</span>
+            </social-link>
         </ul>
     </div>
 
