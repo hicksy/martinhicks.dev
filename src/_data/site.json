@@ -10,11 +10,13 @@
         "url": "https://martinhicks.dev",
         "telephone": "07580017812",
         "sameAs": [
-            "https://indieweb.social/@martinhicks",
-            "https://twitter.com/martinhicks",
             "https://www.linkedin.com/in/martin-hicks-8061748",
             "https://github.com/hicksy",
-            "https://sinovi.uk/founding-partners/#martin-hicks"
+            "https://sinovi.uk/founding-partners/#martin-hicks",
+            "https://indieweb.social/@martinhicks",
+            "https://staging.bsky.app/profile/martinhicks.dev",
+            "https://twitter.com/martinhicks"
+            
         ]
     },
     "rss": {
