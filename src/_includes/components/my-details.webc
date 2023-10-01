@@ -29,26 +29,30 @@
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
             </svg>
-            <span class="ml-3">Around the web</span>
+            <span class="ml-3">Follow me on...</span>
         </panel-header>
         <ul role="list">
 
-            <social-link rel="me" role="listitem" href="https://indieweb.social/@martinhicks">
-                <icon-mastodon slot="icon" class="w-8 h-8"></icon-mastodon>
-                <span slot="content">Follow on Mastodon</span>
-            </social-link>
             <social-link role="listitem" href="https://github.com/hicksy">
                 <icon-github slot="icon" class="w-8 h-8"></icon-github>
-                <span slot="content">Follow on GitHub</span>
+                <span slot="content">GitHub</span>
+            </social-link>
+            <social-link rel="me" role="listitem" href="https://indieweb.social/@martinhicks">
+                <icon-mastodon slot="icon" class="w-8 h-8"></icon-mastodon>
+                <span slot="content">Mastodon</span>
+            </social-link>
+            <social-link role="listitem" href="https://staging.bsky.app/profile/martinhicks.dev">
+                <icon-bluesky slot="icon" class="w-8 h-8"></icon-bluesky>
+                <span slot="content">Bluesky</span>
             </social-link>
             <social-link role="listitem" href="https://www.linkedin.com/in/martin-hicks-8061748/">
                 <icon-linkedin slot="icon" class="w-8 h-8"></icon-linkedin>
-                <span slot="content">Follow on LinkedIn</span>
+                <span slot="content">LinkedIn</span>
             </social-link>
-            <social-link role="listitem" href="https://twitter.com/martinhicks">
+            <!-- <social-link role="listitem" href="https://twitter.com/martinhicks">
                 <icon-twitter slot="icon" class="w-8 h-8"></icon-twitter>
-                <span slot="content">Follow on Twitter</span>
-            </social-link>
+                <span slot="content">Twitter</span>
+            </social-link> -->
         </ul>
     </div>
 
